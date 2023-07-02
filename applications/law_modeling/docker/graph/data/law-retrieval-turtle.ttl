@@ -1,0 +1,2561 @@
+@prefix : <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#> .
+@prefix law: <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@base <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d> .
+
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active
+:active rdf:type owl:AnnotationProperty ;
+        rdfs:subPropertyOf law:attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise
+:amountOfPermittedMerchandise rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#belongTo
+:belongTo rdf:type owl:AnnotationProperty ;
+          rdfs:label "thuộc về" ;
+          rdfs:subPropertyOf :possess .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng
+:cộng rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor
+:designedFor rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude
+:exclude rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include
+:include rdf:type owl:AnnotationProperty ;
+         rdfs:subPropertyOf :possess .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy
+:instructedBy rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics
+:mathematics rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf law:attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains
+:notContains rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting
+:notCounting rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfRoad
+:numberOfRoad rdf:type owl:AnnotationProperty ;
+              rdfs:subPropertyOf law:attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel
+:numberOfWheel rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive
+:passive rdf:type owl:AnnotationProperty ;
+         rdfs:subPropertyOf law:attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#possess
+:possess rdf:type owl:AnnotationProperty ;
+         rdfs:label "sở hữu" ;
+         rdfs:subPropertyOf law:attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt
+:prescribedAt rdf:type owl:AnnotationProperty ;
+              rdfs:range :LawElements .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy
+:pulledBy rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope
+:scope rdf:type owl:AnnotationProperty ;
+       rdfs:subPropertyOf law:attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy
+:separatedBy rdf:type owl:AnnotationProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#state
+:state rdf:type owl:AnnotationProperty ;
+       rdfs:label "trạng thái" ;
+       rdfs:subPropertyOf law:attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation
+:transportation rdf:type owl:AnnotationProperty ;
+                rdfs:subPropertyOf law:attributes ;
+                rdfs:domain :Transportation .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight
+:weight rdf:type owl:AnnotationProperty ;
+        rdfs:range xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes
+law:attributes rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/a_part_of
+webprotege:a_part_of rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf webprotege:possess ;
+                     rdfs:domain webprotege:Concept ;
+                     rdfs:label "một phần của"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/defined_by
+webprotege:defined_by rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain webprotege:Concept ;
+                      rdfs:range webprotege:Concept ;
+                      rdfs:comment "Define the dependence of a concept on another"^^xsd:string ;
+                      rdfs:label "định nghĩa bởi"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/defined_in
+webprotege:defined_in rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      rdfs:domain webprotege:Concept ;
+                      rdfs:range webprotege:Article ,
+                                 webprotege:Clause ,
+                                 webprotege:Document ,
+                                 webprotege:Point ;
+                      rdfs:comment "Identify a concept is declared by a law element"^^xsd:string ;
+                      rdfs:label "được định nghĩa trong"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/element_relation
+webprotege:element_relation rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf owl:topObjectProperty ;
+                            rdfs:comment "Define the relation between law elements"^^xsd:string ;
+                            rdfs:label "quan hệ giữa các thành phần luật"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/has_a
+webprotege:has_a rdf:type owl:ObjectProperty ;
+                 owl:equivalentProperty :at ,
+                                        :dùng_chung ,
+                                        :placed ,
+                                        :scope ;
+                 rdfs:subPropertyOf webprotege:possess ;
+                 owl:inverseOf :không_có ;
+                 rdfs:domain webprotege:Concept ;
+                 rdfs:label "có"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/has_article
+webprotege:has_article rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf webprotege:element_relation ;
+                       rdfs:domain webprotege:Document ;
+                       rdfs:range webprotege:Article ;
+                       rdfs:label "có điều luật"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/has_clause
+webprotege:has_clause rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf webprotege:element_relation ;
+                      rdfs:domain webprotege:Article ;
+                      rdfs:range webprotege:Clause ;
+                      rdfs:label "có khoản luật"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/has_point
+webprotege:has_point rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf webprotege:element_relation ;
+                     rdfs:domain webprotege:Clause ;
+                     rdfs:range webprotege:Point ;
+                     rdfs:label "có điểm luật"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/is_a
+webprotege:is_a rdf:type owl:ObjectProperty ;
+                owl:equivalentProperty :meaning ;
+                rdfs:subPropertyOf webprotege:possess ;
+                rdfs:domain webprotege:Concept ;
+                rdfs:label "là"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/possess
+webprotege:possess rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf webprotege:defined_by ;
+                   rdfs:comment "Define the type of possess relation between 2 concepts"^^xsd:string ;
+                   rdfs:label "sở hữu"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#actions
+:actions rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf webprotege:defined_by ;
+         rdfs:domain webprotege:Concept ;
+         rdfs:range webprotege:Concept ;
+         rdfs:label "hành động"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active
+:active rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :actions .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#add
+:add rdf:type owl:ObjectProperty ;
+     rdfs:subPropertyOf :mathematics ;
+     rdfs:label "cộng" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#at
+:at rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf webprotege:possess ;
+    rdfs:label "mà trên đó"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#belongToArticle
+:belongToArticle rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf webprotege:element_relation ;
+                 rdfs:label "thuộc điều luật"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#control
+:control rdf:type owl:ObjectProperty ;
+         owl:equivalentProperty :drive ;
+         rdfs:subPropertyOf :active ;
+         rdf:type owl:SymmetricProperty ;
+         rdfs:domain webprotege:Concept ;
+         rdfs:range webprotege:Concept ;
+         rdfs:label "điều khiển"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng
+:cộng rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :mathematics .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dedicate
+:dedicate rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :active ;
+          owl:inverseOf :dedicated ;
+          rdf:type owl:SymmetricProperty ;
+          rdfs:label "dành riêng cho"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dedicated
+:dedicated rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :passive ;
+           rdf:type owl:SymmetricProperty ;
+           rdfs:label "được dành riêng cho"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor
+:designedFor rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :passive .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#direct
+:direct rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :active ;
+        owl:inverseOf :instructedBy ;
+        rdf:type owl:SymmetricProperty ;
+        rdfs:label "chỉ dẫn"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#distinguished
+:distinguished rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :passive ;
+               rdfs:label "được phân biệt"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#divided
+:divided rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :passive ;
+         rdfs:label "được chia theo"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#drive
+:drive rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :active ;
+       owl:inverseOf :driven ;
+       rdf:type owl:SymmetricProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#driven
+:driven rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :passive ;
+        rdf:type owl:SymmetricProperty ;
+        rdfs:label "được lái"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dùng_chung
+:dùng_chung rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :active ;
+            rdfs:label "dùng chung"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#equal
+:equal rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :mathematics ;
+       rdfs:label "bằng" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude
+:exclude rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :scope .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#identifiedBy
+:identifiedBy rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty :prescribedAt ,
+                                     :writtenRespectively ;
+              rdfs:subPropertyOf :passive ;
+              rdfs:label "được xác định theo"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include
+:include rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :scope .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy
+:instructedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :passive ;
+              rdf:type owl:SymmetricProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#intersect
+:intersect rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :position ;
+           rdf:type owl:SymmetricProperty ;
+           rdfs:label "giao cùng mức"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#không_có
+:không_có rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf webprotege:possess ;
+          rdfs:label "không có"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#link
+:link rdf:type owl:ObjectProperty ;
+      rdfs:label "liên kết"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics
+:mathematics rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf webprotege:defined_by .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#meaning
+:meaning rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf webprotege:possess ;
+         rdfs:label "chỉ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#measureBy
+:measureBy rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :active .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mentionedIn
+:mentionedIn rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :link ;
+             rdfs:label "được nhắc đến trong"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains
+:notContains rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :scope .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting
+:notCounting rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :active ,
+                                :scope .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#only
+:only rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf :scope ;
+      rdfs:label "duy nhất"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive
+:passive rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :actions .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phân_bổ_trên
+:phân_bổ_trên rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :active ;
+              rdfs:label "phân bổ trên"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#placed
+:placed rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :passive ;
+        rdfs:label "được đặt" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#position
+:position rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf webprotege:defined_by ;
+          rdfs:label "vị trí"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt
+:prescribedAt rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty :writtenRespectively ;
+              rdfs:subPropertyOf :passive .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy
+:pulledBy rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :passive .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope
+:scope rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy
+:separatedBy rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :passive ;
+             owl:inverseOf :separated_with .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separated_by
+:separated_by rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :position ;
+              rdfs:label "tách biệt bởi"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separated_with
+:separated_with rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :position ;
+                rdf:type owl:SymmetricProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:domain :Object ;
+                rdfs:range webprotege:Concept ;
+                rdfs:label "tách biệt với"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#towed
+:towed rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf :passive ;
+       rdf:type owl:SymmetricProperty ;
+       rdfs:label "được kéo theo"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#writtenRespectively
+:writtenRespectively rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :passive ;
+                     rdfs:label "được ghi theo" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_kết_nối
+:được_kết_nối rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :passive ;
+              rdfs:label "được kết nối với"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_sử_dụng
+:được_sử_dụng rdf:type owl:ObjectProperty ;
+              owl:equivalentProperty :để ;
+              rdfs:subPropertyOf :passive ;
+              rdfs:label "được sử dụng"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#để
+:để rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf :passive .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise
+:amountOfPermittedMerchandise rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :transportation .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#attributes
+:attributes rdf:type owl:DatatypeProperty ;
+            rdfs:label "thuộc tính"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chạy_bằng_điện
+:chạy_bằng_điện rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :transportation ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "chạy bằng điện" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chạy_trên_đường_ray
+:chạy_trên_đường_ray rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :transportation ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:label "chạy trên đường ray" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#engine_displacement
+:engine_displacement rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :transportation ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "dung tích làm việc của động cơ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#has_electric_motor_driven_system
+:has_electric_motor_driven_system rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf :transportation ;
+                                  rdfs:range xsd:boolean ;
+                                  rdfs:label "dẫn bằng động cơ điện"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#has_engine
+:has_engine rdf:type owl:DatatypeProperty ;
+            owl:equivalentProperty :run_by_engine ;
+            rdfs:subPropertyOf :transportation ;
+            rdfs:range xsd:boolean ;
+            rdfs:label "có lắp động cơ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#isFreighTransport
+:isFreighTransport rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :transportation ;
+                   rdfs:label "chuyên chở hàng hoá"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#isPersonalTransportation
+:isPersonalTransportation rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf :transportation ;
+                          rdfs:range xsd:boolean ;
+                          rdfs:label "để chở người" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximumNumberOfPeopleCarried
+:maximumNumberOfPeopleCarried rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :transportation ;
+                              rdfs:label "chở người với số lượng tối đa" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximumNumberOfSeatIncludingDriver
+:maximumNumberOfSeatIncludingDriver rdf:type owl:DatatypeProperty ;
+                                    rdfs:subPropertyOf :transportation ;
+                                    rdfs:range xsd:integer ;
+                                    rdfs:label "số chỗ ngồi tính cả người lái tối đa" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximum_designed_speed
+:maximum_designed_speed rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :transportation ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "vận tốc thiết kế lớn nhất"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximum_power_capacity
+:maximum_power_capacity rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :transportation ;
+                        rdfs:label "công suất lớn nhất"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#minimumNumberOfPeopleCarried
+:minimumNumberOfPeopleCarried rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf :transportation ;
+                              rdfs:label "chở người với số lượng tối thiểu" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#một_chiều
+:một_chiều rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :road ;
+           rdfs:range xsd:boolean ;
+           rdfs:label "một chiều" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfRoad
+:numberOfRoad rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf :transportation .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel
+:numberOfWheel rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :transportation .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#number_of_wheel
+:number_of_wheel rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :transportation ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "số bánh xe"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#road
+:road rdf:type owl:DatatypeProperty ;
+      rdfs:label "đường" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#run_by_engine
+:run_by_engine rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :transportation ;
+               rdfs:domain :Transportation ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "có từ hai trục"^^xsd:string ;
+               rdfs:label "chạy bằng động cơ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#sign
+:sign rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :attributes ;
+      rdfs:domain :Sign ;
+      rdfs:range [ rdf:type rdfs:Datatype ;
+                   owl:oneOf [ rdf:type rdf:List ;
+                               rdf:first "đường qua khu đông dân cư" ;
+                               rdf:rest rdf:nil
+                             ]
+                 ] ;
+      rdfs:label "biển báo"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#specification
+:specification rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :attributes ;
+               rdfs:label "đặc trưng"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation
+:transportation rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :attributes .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight
+:weight rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :transportation .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/Article
+webprotege:Article rdf:type owl:Class ;
+                   rdfs:subClassOf :LawElements ;
+                   rdfs:label "Điều Luật"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/Clause
+webprotege:Clause rdf:type owl:Class ;
+                  rdfs:subClassOf :LawElements ;
+                  rdfs:label "Khoản Luật"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/Concept
+webprotege:Concept rdf:type owl:Class ;
+                   rdfs:label "Khái Niệm"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/Document
+webprotege:Document rdf:type owl:Class ;
+                    rdfs:subClassOf :LawElements ;
+                    rdfs:label "Bộ Luật"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/Point
+webprotege:Point rdf:type owl:Class ;
+                 rdfs:subClassOf :LawElements ;
+                 rdfs:label "Điểm Luật"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Certificate
+:Certificate rdf:type owl:Class ;
+             rdfs:subClassOf :LawElements ;
+             rdfs:label "Giấy Chứng Nhận" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements
+:LawElements rdf:type owl:Class ;
+             rdfs:label "Thành Phần Luật"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Misc
+:Misc rdf:type owl:Class ;
+      rdfs:label "Khác"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object
+:Object rdf:type owl:Class ;
+        rdfs:subClassOf webprotege:Concept ;
+        rdfs:label "Vật Thể"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#People
+:People rdf:type owl:Class ;
+        rdfs:subClassOf webprotege:Concept ;
+        rdfs:label "Người"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Place
+:Place rdf:type owl:Class ;
+       rdfs:subClassOf webprotege:Concept ;
+       rdfs:label "Địa điểm" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenForwardAndBackward
+:SeparationBetweenForwardAndBackward rdf:type owl:Class ;
+                                     rdfs:subClassOf :Misc ;
+                                     rdfs:label "Tách Biệt Giữa Chiều Đi Và Chiều Về"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenRoad
+:SeparationBetweenRoad rdf:type owl:Class ;
+                       rdfs:subClassOf :Misc ;
+                       rdfs:label "Tách Biệt Giữa Các Tuyến Đường"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Sign
+:Sign rdf:type owl:Class ;
+      rdfs:subClassOf :Object ;
+      rdfs:label "Biển Báo"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation
+:Transportation rdf:type owl:Class ;
+                rdfs:subClassOf webprotege:Concept ;
+                rdfs:label "Phương Tiện Giao Thông"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Unit
+:Unit rdf:type owl:Class ;
+      rdfs:label "Đơn Vị" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R43MCPZBXMxmS3TJpx1OSR
+webprotege:R43MCPZBXMxmS3TJpx1OSR rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "2-4-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R69sfa0JrlxlAicVYDsfsO
+webprotege:R69sfa0JrlxlAicVYDsfsO rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "4-3-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R79S2GgitiWiibhaz7qn1T6
+webprotege:R79S2GgitiWiibhaz7qn1T6 rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "6-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7hlc6xoXW2zyje64aWdTow
+webprotege:R7hlc6xoXW2zyje64aWdTow rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "7-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7liwyddBGWciFghqZFexHX
+webprotege:R7liwyddBGWciFghqZFexHX rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-10-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7wVXN0MtzNrZHPlvIXhax
+webprotege:R7wVXN0MtzNrZHPlvIXhax rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "2-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8CNA0iqSjsI7ceKVOaX9qb
+webprotege:R8CNA0iqSjsI7ceKVOaX9qb rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-4-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8ONmeAz5yyM2WJlDTHWWfp
+webprotege:R8ONmeAz5yyM2WJlDTHWWfp rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "a-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8QtWYqGZfks5CUvNa91BNG
+webprotege:R8QtWYqGZfks5CUvNa91BNG rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:R79S2GgitiWiibhaz7qn1T6 ,
+                                                         webprotege:R8a9NwQWfVIH2BW2JunqWja ,
+                                                         webprotege:R8vs8eVd549cxizIhiGTAmu ,
+                                                         webprotege:R9nKGHBHJQHx0KXkS0Pb0rd ,
+                                                         webprotege:RCUVxqKNBkNhC3MoQP0ZtvL ,
+                                                         webprotege:RCZ7nAnbw6tXKC7BPAsIJdj ,
+                                                         webprotege:RDKGtp8BdLh04kefspNbb69 ,
+                                                         webprotege:RDLxXM0V9gIiDzTH8RFMglR ,
+                                                         webprotege:RDRWiAvDhLfWg8oC4FQOOoV ,
+                                                         webprotege:RDuaoNWEMoYJIBMCMewrrJW ;
+                                   rdfs:label "6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8a9NwQWfVIH2BW2JunqWja
+webprotege:R8a9NwQWfVIH2BW2JunqWja rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "5-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8cKp8wk2cOEpNirPHT9Rnd
+webprotege:R8cKp8wk2cOEpNirPHT9Rnd rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "3-4-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8cqwHwP5QHfrZdFbXp0kjz
+webprotege:R8cqwHwP5QHfrZdFbXp0kjz rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   webprotege:has_clause <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019> ;
+                                   webprotege:has_point <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019> ,
+                                                        <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019> ,
+                                                        <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019> ,
+                                                        <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019> ,
+                                                        <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019> ;
+                                   rdfs:label "1-3-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8nPcVgFEpBZgBlA05ICgzq
+webprotege:R8nPcVgFEpBZgBlA05ICgzq rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "8-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8u5Xa4wJXxsnCBqTXVSqag
+webprotege:R8u5Xa4wJXxsnCBqTXVSqag rdf:type owl:NamedIndividual ,
+                                            webprotege:Document ;
+                                   rdfs:label "23/2008"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8vs8eVd549cxizIhiGTAmu
+webprotege:R8vs8eVd549cxizIhiGTAmu rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "2-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R92cjQlHJOoH3ZinVvmR1VM
+webprotege:R92cjQlHJOoH3ZinVvmR1VM rdf:type owl:NamedIndividual ,
+                                            :Transportation ;
+                                   webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT> ,
+                                                         <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019> ;
+                                   webprotege:has_a :đầu_máy ;
+                                   webprotege:is_a webprotege:RBFdfKCww4biMP3AJf47jDV ;
+                                   rdfs:label "máy kéo"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9H2Fd3Ooct9EjjDGgK0Ko4
+webprotege:R9H2Fd3Ooct9EjjDGgK0Ko4 rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "2-10-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9HFxDag0hbiMEo84qBP8tH
+webprotege:R9HFxDag0hbiMEo84qBP8tH rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "3-10-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9HpSSR0fT7bEa2I1DlGcLJ
+webprotege:R9HpSSR0fT7bEa2I1DlGcLJ rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "6-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9K3d5hqpxmG6JO5egLBN32
+webprotege:R9K3d5hqpxmG6JO5egLBN32 rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:R8cqwHwP5QHfrZdFbXp0kjz ,
+                                                         webprotege:Rf1CXH8NERRzzMx0V6ZTYY ;
+                                   rdfs:label "3-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9RSxpCt1ae5S1R08qBDGaH
+webprotege:R9RSxpCt1ae5S1R08qBDGaH rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9SfYCGAKdInNDR5Gr06Fva
+webprotege:R9SfYCGAKdInNDR5Gr06Fva rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9ZtIV6se8F2eNUbSgMyaBb
+webprotege:R9ZtIV6se8F2eNUbSgMyaBb rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:RBuOHOMWYwpKieMo3WcIl2Y ,
+                                                         webprotege:RDSxuNmcTaBiGPgNMZoxC1L ,
+                                                         webprotege:RDg1ruXCaLQS9SM0fIuu2bf ,
+                                                         webprotege:RDrLmsfHSCyU2xHMQu3zgOt ;
+                                   rdfs:label "2-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9cGWXTltafvf7VxBxRLtS0
+webprotege:R9cGWXTltafvf7VxBxRLtS0 rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "e-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9itEdtwjEySo4kzGRPRpIB
+webprotege:R9itEdtwjEySo4kzGRPRpIB rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "5-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9lIscYE1NK6ARDC0HAqul9
+webprotege:R9lIscYE1NK6ARDC0HAqul9 rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "9-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9maDKoJSpUTPUr9RDvpjFM
+webprotege:R9maDKoJSpUTPUr9RDvpjFM rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "4-4-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9nKGHBHJQHx0KXkS0Pb0rd
+webprotege:R9nKGHBHJQHx0KXkS0Pb0rd rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9sHP1B0bHKlp7IV7QIgVrT
+webprotege:R9sHP1B0bHKlp7IV7QIgVrT rdf:type owl:NamedIndividual ,
+                                            :Transportation ;
+                                   rdfs:label "phương tiện giao thông"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RB5LOlADyimD8shaCd6PHwj
+webprotege:RB5LOlADyimD8shaCd6PHwj rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "4-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RB82dOS7n1s8Ylye2b6HR9d
+webprotege:RB82dOS7n1s8Ylye2b6HR9d rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBFdfKCww4biMP3AJf47jDV
+webprotege:RBFdfKCww4biMP3AJf47jDV rdf:type owl:NamedIndividual ,
+                                            :Transportation ;
+                                   rdfs:label "xe"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBN7eomnlNToO4B5RAztrYc
+webprotege:RBN7eomnlNToO4B5RAztrYc rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "7-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBNLFrdQGe4EQ6wnJVrKXLM
+webprotege:RBNLFrdQGe4EQ6wnJVrKXLM rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:RBgKBD4maPiGuYJjeRzdZjn ,
+                                                         webprotege:RCks1t2xLt7Qlst6SYNdwkA ,
+                                                         webprotege:RDVBhyOwPkK2eJnoLDasWV3 ,
+                                                         webprotege:RDn6f8TWQsSGaaOuVvs3DyH ,
+                                                         webprotege:RUTxfrECu4Iu5a3AbqsKtG ;
+                                   rdfs:label "8-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBSUEVtmE6K0XqHVannxZIL
+webprotege:RBSUEVtmE6K0XqHVannxZIL rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "g-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBZAA8NRd0dAB1yqLF4eJb7
+webprotege:RBZAA8NRd0dAB1yqLF4eJb7 rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "2-9-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBfL5pxEBLW0WVenmov0E9B
+webprotege:RBfL5pxEBLW0WVenmov0E9B rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "b-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBgKBD4maPiGuYJjeRzdZjn
+webprotege:RBgKBD4maPiGuYJjeRzdZjn rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "4-8-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBoeL8EGnQ4U8GoOPVmJQNr
+webprotege:RBoeL8EGnQ4U8GoOPVmJQNr rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "3-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBuJLBOAyfo70hS9PEhe8cL
+webprotege:RBuJLBOAyfo70hS9PEhe8cL rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:R43MCPZBXMxmS3TJpx1OSR ,
+                                                         webprotege:R8CNA0iqSjsI7ceKVOaX9qb ,
+                                                         webprotege:R8cKp8wk2cOEpNirPHT9Rnd ,
+                                                         webprotege:R9maDKoJSpUTPUr9RDvpjFM ;
+                                   rdfs:label "4-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBuOHOMWYwpKieMo3WcIl2Y
+webprotege:RBuOHOMWYwpKieMo3WcIl2Y rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-2-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBvWMqSNoslcVfqLkLhafa7
+webprotege:RBvWMqSNoslcVfqLkLhafa7 rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_article webprotege:R9RSxpCt1ae5S1R08qBDGaH ,
+                                                          webprotege:R9itEdtwjEySo4kzGRPRpIB ,
+                                                          webprotege:RBN7eomnlNToO4B5RAztrYc ,
+                                                          webprotege:RCMlegxVIt9ZlATVQCscwSc ,
+                                                          webprotege:RCi4rB8gYcfctOcdtxmJdFs ,
+                                                          webprotege:RDqbbFHC5CS1h58snbVdFCz ,
+                                                          webprotege:RTF0QdEnGmV87vRUAdi6Y4 ,
+                                                          webprotege:RUbEPqmUkmBCnuYKIm3p3t ,
+                                                          webprotege:RZTZiup9ddkYqcJKTr1CrF ,
+                                                          webprotege:RmAZZ5wxIZpeD525pMVpoj ,
+                                                          webprotege:Rr1PHADftwWRaFBlTBJxmo ;
+                                   rdfs:label "5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBzbngPor1Ld8Oj67JvEg0c
+webprotege:RBzbngPor1Ld8Oj67JvEg0c rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-9-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RC6tYN6Cttjsa9rJFprLNsm
+webprotege:RC6tYN6Cttjsa9rJFprLNsm rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RC7ZCSZ32esBvtBZdl6o0DW
+webprotege:RC7ZCSZ32esBvtBZdl6o0DW rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:R7hlc6xoXW2zyje64aWdTow ,
+                                                         webprotege:R7wVXN0MtzNrZHPlvIXhax ,
+                                                         webprotege:R8nPcVgFEpBZgBlA05ICgzq ,
+                                                         webprotege:R9HpSSR0fT7bEa2I1DlGcLJ ,
+                                                         webprotege:R9SfYCGAKdInNDR5Gr06Fva ,
+                                                         webprotege:R9lIscYE1NK6ARDC0HAqul9 ,
+                                                         webprotege:RB5LOlADyimD8shaCd6PHwj ,
+                                                         webprotege:RBoeL8EGnQ4U8GoOPVmJQNr ,
+                                                         webprotege:RQAkWhjqi3WrmtdxK6vvtf ,
+                                                         webprotege:RSfxEFlX3NsFcPiTwsibue ;
+                                   rdfs:label "7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCMlegxVIt9ZlATVQCscwSc
+webprotege:RCMlegxVIt9ZlATVQCscwSc rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "6-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCUVxqKNBkNhC3MoQP0ZtvL
+webprotege:RCUVxqKNBkNhC3MoQP0ZtvL rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "8-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCZ7nAnbw6tXKC7BPAsIJdj
+webprotege:RCZ7nAnbw6tXKC7BPAsIJdj rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "9-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCeevdaGsRsoYHBPF3rmJlk
+webprotege:RCeevdaGsRsoYHBPF3rmJlk rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "c-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCi4rB8gYcfctOcdtxmJdFs
+webprotege:RCi4rB8gYcfctOcdtxmJdFs rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "10-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCks1t2xLt7Qlst6SYNdwkA
+webprotege:RCks1t2xLt7Qlst6SYNdwkA rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "3-8-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RClrJ1uYeiNIhHvvzsfiyDn
+webprotege:RClrJ1uYeiNIhHvvzsfiyDn rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "d-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RD0cnZYmIjpXTCe5stKYDcf
+webprotege:RD0cnZYmIjpXTCe5stKYDcf rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:RBZAA8NRd0dAB1yqLF4eJb7 ,
+                                                         webprotege:RBzbngPor1Ld8Oj67JvEg0c ;
+                                   rdfs:label "9-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDIPCTMzlwBOzMlLBC0K5Fv
+webprotege:RDIPCTMzlwBOzMlLBC0K5Fv rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "đ-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDKGtp8BdLh04kefspNbb69
+webprotege:RDKGtp8BdLh04kefspNbb69 rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "10-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDLxXM0V9gIiDzTH8RFMglR
+webprotege:RDLxXM0V9gIiDzTH8RFMglR rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "7-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDRWiAvDhLfWg8oC4FQOOoV
+webprotege:RDRWiAvDhLfWg8oC4FQOOoV rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "3-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDSxuNmcTaBiGPgNMZoxC1L
+webprotege:RDSxuNmcTaBiGPgNMZoxC1L rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "2-2-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDVBhyOwPkK2eJnoLDasWV3
+webprotege:RDVBhyOwPkK2eJnoLDasWV3 rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "2-8-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDg1ruXCaLQS9SM0fIuu2bf
+webprotege:RDg1ruXCaLQS9SM0fIuu2bf rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "3-2-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDkVXjsgiVTO4TOS6JBwdex
+webprotege:RDkVXjsgiVTO4TOS6JBwdex rdf:type owl:NamedIndividual ,
+                                            webprotege:Point ;
+                                   rdfs:label "i-2-1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDn6f8TWQsSGaaOuVvs3DyH
+webprotege:RDn6f8TWQsSGaaOuVvs3DyH rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "1-8-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDqbbFHC5CS1h58snbVdFCz
+webprotege:RDqbbFHC5CS1h58snbVdFCz rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "2-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDrLmsfHSCyU2xHMQu3zgOt
+webprotege:RDrLmsfHSCyU2xHMQu3zgOt rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "4-2-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDuaoNWEMoYJIBMCMewrrJW
+webprotege:RDuaoNWEMoYJIBMCMewrrJW rdf:type owl:NamedIndividual ,
+                                            webprotege:Clause ;
+                                   rdfs:label "4-6-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDzV6hDACbQJIdyntOteMj7
+webprotege:RDzV6hDACbQJIdyntOteMj7 rdf:type owl:NamedIndividual ,
+                                            webprotege:Article ;
+                                   webprotege:has_clause webprotege:RB82dOS7n1s8Ylye2b6HR9d ,
+                                                         webprotege:RC6tYN6Cttjsa9rJFprLNsm ;
+                                   rdfs:label "1-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RQAkWhjqi3WrmtdxK6vvtf
+webprotege:RQAkWhjqi3WrmtdxK6vvtf rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "10-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RSfxEFlX3NsFcPiTwsibue
+webprotege:RSfxEFlX3NsFcPiTwsibue rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "5-7-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RTF0QdEnGmV87vRUAdi6Y4
+webprotege:RTF0QdEnGmV87vRUAdi6Y4 rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "9-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RUTxfrECu4Iu5a3AbqsKtG
+webprotege:RUTxfrECu4Iu5a3AbqsKtG rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "5-8-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RUbEPqmUkmBCnuYKIm3p3t
+webprotege:RUbEPqmUkmBCnuYKIm3p3t rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "11-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RVFiEDoWYRP08ndcnxCVmK
+webprotege:RVFiEDoWYRP08ndcnxCVmK rdf:type owl:NamedIndividual ,
+                                           webprotege:Article ;
+                                  webprotege:has_clause webprotege:R7liwyddBGWciFghqZFexHX ,
+                                                        webprotege:R9H2Fd3Ooct9EjjDGgK0Ko4 ,
+                                                        webprotege:R9HFxDag0hbiMEo84qBP8tH ;
+                                  rdfs:label "10-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RWALHFiiLPIdy71FXUl4Py
+webprotege:RWALHFiiLPIdy71FXUl4Py rdf:type owl:NamedIndividual ,
+                                           :People ;
+                                  rdfs:label "người tham gia giao thông"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RZTZiup9ddkYqcJKTr1CrF
+webprotege:RZTZiup9ddkYqcJKTr1CrF rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "3-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/Rf1CXH8NERRzzMx0V6ZTYY
+webprotege:Rf1CXH8NERRzzMx0V6ZTYY rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "2-3-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/Rgv8f427s8gY6MDo6fpgCh
+webprotege:Rgv8f427s8gY6MDo6fpgCh rdf:type owl:NamedIndividual ,
+                                           :Transportation ;
+                                  owl:sameAs :phương_tiện_cơ_giới ;
+                                  webprotege:a_part_of webprotege:R9sHP1B0bHKlp7IV7QIgVrT ;
+                                  webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT> ;
+                                  webprotege:is_a webprotege:RBFdfKCww4biMP3AJf47jDV ;
+                                  :meaning webprotege:R92cjQlHJOoH3ZinVvmR1VM ,
+                                           :các_loại_xe_tương_tự ,
+                                           :các_loại_xe_ô_tô ,
+                                           :rơ_moóc ,
+                                           :sơ-mi_rơ_moóc ,
+                                           :xe_gắn_máy ,
+                                           :xe_máy ;
+                                  rdfs:label "xe cơ giới"^^xsd:string ;
+                                  :include :tàu_điện_bánh_lốp .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource webprotege:Rgv8f427s8gY6MDo6fpgCh ;
+   owl:annotatedProperty :meaning ;
+   owl:annotatedTarget :các_loại_xe_tương_tự ;
+   :designedFor "để chở người và hàng hoá trên đường bộ"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource webprotege:Rgv8f427s8gY6MDo6fpgCh ;
+   owl:annotatedProperty :meaning ;
+   owl:annotatedTarget :xe_máy ;
+   :numberOfWheel 2 ,
+                  "3"^^xsd:int
+ ] .
+
+
+###  http://webprotege.stanford.edu/RmAZZ5wxIZpeD525pMVpoj
+webprotege:RmAZZ5wxIZpeD525pMVpoj rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "4-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/Rr1PHADftwWRaFBlTBJxmo
+webprotege:Rr1PHADftwWRaFBlTBJxmo rdf:type owl:NamedIndividual ,
+                                           webprotege:Clause ;
+                                  rdfs:label "8-5-100/2019"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RyTfa4co4zoY5YynlBPn7x
+webprotege:RyTfa4co4zoY5YynlBPn7x rdf:type owl:NamedIndividual ,
+                                           webprotege:Document ;
+                                  webprotege:has_article webprotege:R9K3d5hqpxmG6JO5egLBN32 ,
+                                                         webprotege:R9ZtIV6se8F2eNUbSgMyaBb ,
+                                                         webprotege:RBNLFrdQGe4EQ6wnJVrKXLM ,
+                                                         webprotege:RBuJLBOAyfo70hS9PEhe8cL ,
+                                                         webprotege:RBvWMqSNoslcVfqLkLhafa7 ,
+                                                         webprotege:RC7ZCSZ32esBvtBZdl6o0DW ,
+                                                         webprotege:RD0cnZYmIjpXTCe5stKYDcf ,
+                                                         webprotege:RDzV6hDACbQJIdyntOteMj7 ,
+                                                         webprotege:RVFiEDoWYRP08ndcnxCVmK ;
+                                  rdfs:label "100/2019"@en .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ
+:Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ rdf:type owl:NamedIndividual ,
+                                                                                                                  :Certificate ;
+                                                                                                         rdfs:label "Giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông cơ giới đường bộ" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu
+:biển_báo_hiệu rdf:type owl:NamedIndividual ,
+                        :Sign ;
+               rdfs:label "biển báo hiệu"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu_đường_ưu_tên
+:biển_báo_hiệu_đường_ưu_tên rdf:type owl:NamedIndividual ,
+                                     :Sign ;
+                            :sign "đường ưu tiên"^^xsd:string ;
+                            rdfs:label "biển báo hiệu đường ưu tiên"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_đường_qua_khu_đông_dân_cư
+:biển_báo_đường_qua_khu_đông_dân_cư rdf:type owl:NamedIndividual ,
+                                             :Sign ;
+                                    :sign "đường qua khu đông dân cư"^^xsd:string ;
+                                    rdfs:label "biển báo đường qua khu đông dân cư"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#bến_phà_đường_bộ
+:bến_phà_đường_bộ rdf:type owl:NamedIndividual ,
+                           :Object ;
+                  rdfs:label "bến phà đường bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_dọc_của_đường
+:chiều_dọc_của_đường rdf:type owl:NamedIndividual ,
+                              :Object ;
+                     rdfs:label "chiều dọc của đường"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_về
+:chiều_về rdf:type owl:NamedIndividual ,
+                   :Object ;
+          rdfs:label "chiều về"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_đi
+:chiều_đi rdf:type owl:NamedIndividual ,
+                   :Object ;
+          rdfs:label "chiều đi"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#càng
+:càng rdf:type owl:NamedIndividual ,
+               :Object ;
+      owl:sameAs :vô_lăng ;
+      rdfs:label "càng"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự
+:các_loại_xe_tương_tự rdf:type owl:NamedIndividual ,
+                               :Transportation ;
+                      rdfs:label "các loại xe tương tự" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_gắn_máy
+:các_loại_xe_tương_tự_xe_gắn_máy rdf:type owl:NamedIndividual ,
+                                          :Transportation ;
+                                 webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019> ;
+                                 webprotege:is_a :phương_tiện_giao_thông_đường_bộ ;
+                                 :maximum_designed_speed "<=50km/h"^^xsd:string ;
+                                 :number_of_wheel "2-3"^^xsd:string ;
+                                 :run_by_engine "true"^^xsd:boolean ;
+                                 rdfs:label "các loại xe tương tự xe gắn máy"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_mô_tô
+:các_loại_xe_tương_tự_xe_mô_tô rdf:type owl:NamedIndividual ,
+                                        :Transportation ;
+                               webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019> ;
+                               webprotege:is_a :phương_tiện_giao_thông_đường_bộ ;
+                               :engine_displacement "50cm3 +"^^xsd:string ;
+                               :maximum_designed_speed ">50km/h"^^xsd:string ;
+                               :number_of_wheel "2-3"^^xsd:string ;
+                               :run_by_engine "true"^^xsd:boolean ;
+                               rdfs:label "các loại xe tương tự xe mô tô"^^xsd:string ;
+                               :weight "<=400kg"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_ô_tô
+:các_loại_xe_tương_tự_xe_ô_tô rdf:type owl:NamedIndividual ,
+                                       :Transportation ;
+                              owl:sameAs :các_loại_xe_ô_tô ;
+                              webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019> ;
+                              webprotege:is_a :phương_tiện_giao_thông_đường_bộ ;
+                              :number_of_wheel "4+"^^xsd:string ;
+                              :run_by_engine "true"^^xsd:boolean ;
+                              :specification "có phần động cơ và thùng hàng (nếu có) lắp trên cùng một xát xi (kể cả loại xe 4 bánh chạy bằng năng lượng điện)"^^xsd:string ;
+                              rdfs:label "các loại xe tương tự xe ô tô"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_ô_tô
+:các_loại_xe_ô_tô rdf:type owl:NamedIndividual ,
+                           :Transportation ;
+                  rdfs:label "các loại xe ô tô"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cầu_đường_bộ
+:cầu_đường_bộ rdf:type owl:NamedIndividual ,
+                       :Object ;
+              rdfs:label "cầu đường bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_ba
+:cụm_trục_ba rdf:type owl:NamedIndividual ,
+                      :Object ;
+             rdfs:label "cụm trục ba"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_kép
+:cụm_trục_kép rdf:type owl:NamedIndividual ,
+                       :Object ;
+              rdfs:label "cụm trục kép"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách
+:dải_phân_cách rdf:type owl:NamedIndividual ,
+                        :Object ;
+               webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT> ;
+               :specification "xe không chạy trên đó được và để phân chia phần đường xe chạy thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường dành cho xe cơ giới và xe thô sơ hoặc của nhiều loại xe khác nhau trên cùng một chiều giao thông." ;
+               rdfs:label "dải phân cách"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hầm_đường_bộ
+:hầm_đường_bộ rdf:type owl:NamedIndividual ,
+                       :Object ;
+              rdfs:label "hầm đường bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hệ_thống_trục
+:hệ_thống_trục rdf:type owl:NamedIndividual ,
+                        :Object ;
+               rdfs:label "hệ thống trục"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#khối_lượng_bản_thân
+:khối_lượng_bản_thân rdf:type owl:NamedIndividual ,
+                              :Object ;
+                     rdfs:label "khối lượng bản thân" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#kilogam
+:kilogam rdf:type owl:NamedIndividual ,
+                  :Unit ;
+         rdfs:label "kilôgam" ;
+         rdfs:seeAlso "kg" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường
+:làn_đường rdf:type owl:NamedIndividual ,
+                    :Object ;
+           owl:sameAs :đường ;
+           webprotege:a_part_of :phần_đường_xe_chạy ;
+           webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT> ;
+           :divided :chiều_dọc_của_đường ;
+           :specification "có đủ bề rộng cho xe chạy an toàn" ;
+           rdfs:label "làn đường"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường_ưu_tiên
+:làn_đường_ưu_tiên rdf:type owl:NamedIndividual ,
+                            :Object ;
+                   webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT> ;
+                   webprotege:is_a :làn_đường ;
+                   :specification "mà trên đó phương tiện tham gia giao thông được quy định là ưu tiên sẽ được các phương tiện khác nhường đường khi cùng tham gia giao thông."^^xsd:string ;
+                   rdfs:label "làn đường ưu tiên" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#lối_vào
+:lối_vào rdf:type owl:NamedIndividual ,
+                  :Place ;
+         rdfs:label "lối vào" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#lốp_xe
+:lốp_xe rdf:type owl:NamedIndividual ,
+                 :Object ;
+        rdfs:label "lốp xe"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#người_đi_bộ
+:người_đi_bộ rdf:type owl:NamedIndividual ,
+                      :People ;
+             rdfs:label "người đi bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nút_giao
+:nút_giao rdf:type owl:NamedIndividual ,
+                   :Object ;
+          owl:sameAs :nơi_đường_giao_nhau_cùng_mức ;
+          rdfs:label "nút giao" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau
+:nơi_đường_giao_nhau rdf:type owl:NamedIndividual ,
+                              :Object ;
+                     owl:sameAs :nơi_đường_giao_nhau_cùng_mức ;
+                     rdfs:label "nơi đường giao nhau" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau_cùng_mức
+:nơi_đường_giao_nhau_cùng_mức rdf:type owl:NamedIndividual ,
+                                       :Object ;
+                              webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT> ;
+                              webprotege:has_a :đường ;
+                              rdfs:label "nơi đường giao nhau cùng mức"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :nơi_đường_giao_nhau_cùng_mức ;
+   owl:annotatedProperty webprotege:has_a ;
+   owl:annotatedTarget :đường ;
+   :numberOfRoad "hai hay nhiều" ;
+   law:attributes "giao nhau trên cùng một mặt phẳng gồm cả mặt bằng hình thành vị trí giao nhau đó"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_cơ_giới
+:phương_tiện_cơ_giới rdf:type owl:NamedIndividual ,
+                              :Transportation ;
+                     rdfs:label "phương tiện cơ giới"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_cơ_giới_đường_bộ
+:phương_tiện_giao_thông_cơ_giới_đường_bộ rdf:type owl:NamedIndividual ,
+                                                  :Object ;
+                                         webprotege:is_a :phần_của_đường_bộ ;
+                                         :được_sử_dụng :phương_tiện_giao_thông_cơ_giới_đường_bộ ;
+                                         rdfs:label "phương tiện giao thông cơ giới đường bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_thô_sơ_đường_bộ
+:phương_tiện_giao_thông_thô_sơ_đường_bộ rdf:type owl:NamedIndividual ,
+                                                 :Transportation ;
+                                        rdfs:label "phương tiện giao thông thô sơ đường bộ" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_đường_bộ
+:phương_tiện_giao_thông_đường_bộ rdf:type owl:NamedIndividual ,
+                                          :Transportation ;
+                                 rdfs:label "phương tiện giao thông đường bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_của_đường_bộ
+:phần_của_đường_bộ rdf:type owl:NamedIndividual ,
+                            :Object ;
+                   owl:sameAs :đường_bộ ;
+                   webprotege:is_a :đường_bộ ;
+                   rdfs:label "phần của đường bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_tách_biệt_giữa_chiều_đi_và_về_trên_đường_hai_chiều
+:phần_tách_biệt_giữa_chiều_đi_và_về_trên_đường_hai_chiều rdf:type owl:NamedIndividual ,
+                                                                  :SeparationBetweenForwardAndBackward ;
+                                                         :dùng_chung :phần_đường_xe_chạy ;
+                                                         :không_có :dải_phân_cách ;
+                                                         rdfs:label "phần tách biệt giữa chiều đi và về trên đường hai chiều"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường
+:phần_đường rdf:type owl:NamedIndividual ,
+                     :Object ;
+            owl:sameAs :đường ;
+            webprotege:a_part_of :đường_bộ ;
+            webprotege:is_a :phần_đường ;
+            rdfs:label "phần đường"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_cơ_giới
+:phần_đường_dành_cho_xe_cơ_giới rdf:type owl:NamedIndividual ,
+                                         :Object ;
+                                webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT> ;
+                                webprotege:is_a :phần_của_đường_bộ ;
+                                :được_sử_dụng :phương_tiện_giao_thông_cơ_giới_đường_bộ ,
+                                              :xe_máy_chuyên_dùng ;
+                                rdfs:label "phần đường dành cho xe cơ giới"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :phần_đường_dành_cho_xe_cơ_giới ;
+   owl:annotatedProperty :được_sử_dụng ;
+   owl:annotatedTarget :xe_máy_chuyên_dùng ;
+   law:attributes "qua lại"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_thô_sơ
+:phần_đường_dành_cho_xe_thô_sơ rdf:type owl:NamedIndividual ,
+                                        :Object ;
+                               webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT> ;
+                               webprotege:is_a :phần_của_đường_bộ ;
+                               :được_sử_dụng :phương_tiện_giao_thông_thô_sơ_đường_bộ ;
+                               rdfs:label "phần đường dành cho xe thô sơ" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :phần_đường_dành_cho_xe_thô_sơ ;
+   owl:annotatedProperty :được_sử_dụng ;
+   owl:annotatedTarget :phương_tiện_giao_thông_thô_sơ_đường_bộ ;
+   law:attributes "qua lại"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_xe_chạy
+:phần_đường_xe_chạy rdf:type owl:NamedIndividual ,
+                             :Object ;
+                    webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT> ;
+                    webprotege:has_a :làn_đường ;
+                    webprotege:is_a :phần_của_đường_bộ ;
+                    :được_sử_dụng webprotege:R9sHP1B0bHKlp7IV7QIgVrT ;
+                    rdfs:label "phần đường xe chạy"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :phần_đường_xe_chạy ;
+   owl:annotatedProperty webprotege:has_a ;
+   owl:annotatedTarget :làn_đường ;
+   :transportation "một hoặc nhiều"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :phần_đường_xe_chạy ;
+   owl:annotatedProperty :được_sử_dụng ;
+   owl:annotatedTarget webprotege:R9sHP1B0bHKlp7IV7QIgVrT ;
+   law:attributes "qua lại"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#rơ_moóc
+:rơ_moóc rdf:type owl:NamedIndividual ,
+                  :Object ;
+         webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT> ;
+         :towed webprotege:R92cjQlHJOoH3ZinVvmR1VM ;
+         :được_kết_nối :xe_ô_tô ;
+         :specification "có thể tháo rời với phần đầu kéo"^^xsd:string ;
+         rdfs:label "rơ-móoc"^^xsd:string ;
+         :include :hệ_thống_trục ,
+                  :lốp_xe .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :rơ_moóc ;
+   owl:annotatedProperty :specification ;
+   owl:annotatedTarget "có thể tháo rời với phần đầu kéo"^^xsd:string ;
+   owl:versionInfo <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019>
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#sơ-mi_rơ_moóc
+:sơ-mi_rơ_moóc rdf:type owl:NamedIndividual ,
+                        :Object ;
+               rdfs:label "sơ-mi rơ moóc" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thông_số
+:thông_số rdf:type owl:NamedIndividual ,
+                   :Object ;
+          rdfs:label "thông số" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thùng_xe_của_ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc
+:thùng_xe_của_ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc rdf:type owl:NamedIndividual ,
+                                                      :Object ;
+                                             rdfs:label "thùng xe của ô tô đầu kéo kéo sơ-mi rơ-móoc" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ton
+:ton rdf:type owl:NamedIndividual ,
+              :Unit ;
+     rdfs:label "tấn" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe
+:trọng_tải_bản_thân_xe rdf:type owl:NamedIndividual ,
+                                :Object ;
+                       webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT> ;
+                       webprotege:is_a :khối_lượng_bản_thân ;
+                       :writtenRespectively :thông_số ;
+                       rdfs:label "trọng tải bản thân xe" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :trọng_tải_bản_thân_xe ;
+   owl:annotatedProperty webprotege:is_a ;
+   owl:annotatedTarget :khối_lượng_bản_thân ;
+   :belongTo webprotege:RBFdfKCww4biMP3AJf47jDV ;
+   :state "tĩnh"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :trọng_tải_bản_thân_xe ;
+   owl:annotatedProperty :writtenRespectively ;
+   owl:annotatedTarget :thông_số ;
+   :notCounting "khối lượng hàng hoá trên xe" ,
+                "khối lượng người trong xe"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe
+:trọng_tải_toàn_bộ_xe rdf:type owl:NamedIndividual ,
+                               :Object ;
+                      owl:sameAs :tổng_trọng_tải ;
+                      webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT> ;
+                      :equal :trọng_tải_bản_thân_xe ;
+                      rdfs:label "trọng tải toàn bộ xe" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :trọng_tải_toàn_bộ_xe ;
+   owl:annotatedProperty :equal ;
+   owl:annotatedTarget :trọng_tải_bản_thân_xe ;
+   :cộng "khối lượng của người, hành lý, hàng hoá xếp trên xe (nếu có)"^^xsd:string
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe_cho_phép
+:trọng_tải_toàn_bộ_xe_cho_phép rdf:type owl:NamedIndividual ,
+                                        :Object ;
+                               webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT> ;
+                               :equal :trọng_tải_bản_thân_xe ;
+                               :identifiedBy :Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ ;
+                               rdfs:label "trọng tải toàn bộ xe cho phép"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :trọng_tải_toàn_bộ_xe_cho_phép ;
+   owl:annotatedProperty :equal ;
+   owl:annotatedTarget :trọng_tải_bản_thân_xe ;
+   :cộng "khối lượng chuyên chở cho phép"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_xe
+:trục_xe rdf:type owl:NamedIndividual ,
+                  :Object ;
+         webprotege:has_a :cụm_trục_ba ,
+                          :cụm_trục_kép ,
+                          :trục_đơn ;
+         :mentionedIn <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT> ;
+         rdfs:label "trục xe"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_đơn
+:trục_đơn rdf:type owl:NamedIndividual ,
+                   :Object ;
+          rdfs:label "trục đơn"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tuyến_đường
+:tuyến_đường rdf:type owl:NamedIndividual ,
+                      :Object ;
+             owl:sameAs :đường ;
+             rdfs:label "tuyến đường"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu
+:tàu rdf:type owl:NamedIndividual ,
+              :Transportation ;
+     rdfs:label "tàu" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu_điện_bánh_lốp
+:tàu_điện_bánh_lốp rdf:type owl:NamedIndividual ,
+                            :Transportation ;
+                   webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT> ;
+                   webprotege:is_a :tàu ;
+                   :chạy_bằng_điện "true"^^xsd:boolean ;
+                   :chạy_trên_đường_ray "true"^^xsd:boolean ;
+                   rdfs:label "tàu điện bánh lốp" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_chiều_đi_và_về_trên_đường_đôi
+:tách_biệt_giữa_chiều_đi_và_về_trên_đường_đôi rdf:type owl:NamedIndividual ,
+                                                       :SeparationBetweenForwardAndBackward ;
+                                              webprotege:has_a :chiều_về ,
+                                                               :chiều_đi ,
+                                                               :tách_biệt_giữa_chiều_đi_và_về_trên_đường_đôi ;
+                                              :distinguished :dải_phân_cách ;
+                                              rdfs:label "tách biệt giữa chiều đi và về trên đường đôi"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_đường_dành_cho_một_số_loại_phương_tiện_với_đường_dành_cho_các_phương_tiện_khác
+:tách_biệt_giữa_đường_dành_cho_một_số_loại_phương_tiện_với_đường_dành_cho_các_phương_tiện_khác rdf:type owl:NamedIndividual ,
+                                                                                                        :SeparationBetweenRoad ;
+                                                                                               :separated_with :đường_cho_các_phương_tiện_khác ,
+                                                                                                               :đường_dành_riêng_cho_một_số_loại_phương_tiện ;
+                                                                                               rdfs:label "tách biệt giữa đường dành cho một số loại phương tiện với đường dành cho các phương tiện khác"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới_với_đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ
+:tách_biệt_giữa_đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới_với_đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ rdf:type owl:NamedIndividual ,
+                                                                                                                                          :SeparationBetweenRoad ;
+                                                                                                                                 :separated_with :đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới ,
+                                                                                                                                                 :đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ ;
+                                                                                                                                 rdfs:label "tách biệt giữa đường dành riêng cho các loại phương tiện cơ giới với đường dành riêng cho các phương tiện thô sơ và người đi bộ" ;
+                                                                                                                                 :separatedBy :dải_phân_cách ,
+                                                                                                                                              :vạch_sơn_dọc_liền .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tải_trọng_trục_xe
+:tải_trọng_trục_xe rdf:type owl:NamedIndividual ,
+                            :Object ;
+                   webprotege:a_part_of :trọng_tải_toàn_bộ_xe ;
+                   webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT> ;
+                   :phân_bổ_trên :trục_xe ;
+                   rdfs:label "tải trọng trục xe"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :tải_trọng_trục_xe ;
+   owl:annotatedProperty :phân_bổ_trên ;
+   owl:annotatedTarget :trục_xe ;
+   :transportation 1
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tổng_trọng_tải
+:tổng_trọng_tải rdf:type owl:NamedIndividual ,
+                         :Object ;
+                rdfs:label "tổng trọng tải" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vô_lăng
+:vô_lăng rdf:type owl:NamedIndividual ,
+                  :Object ;
+         rdfs:label "vô lăng"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn
+:vạch_sơn rdf:type owl:NamedIndividual ,
+                   :Object ;
+          rdfs:label "vạch sơn"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền
+:vạch_sơn_dọc_liền rdf:type owl:NamedIndividual ,
+                            :Object ;
+                   webprotege:is_a :vạch_sơn ;
+                   :specification "dọc liền" ;
+                   rdfs:label "vạch sơn dọc liền"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_3_bánh
+:xe_3_bánh rdf:type owl:NamedIndividual ,
+                    :Transportation ;
+           rdfs:label "xe 3 bánh"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_bán_tải
+:xe_bán_tải rdf:type owl:NamedIndividual ,
+                     :Transportation ;
+            owl:sameAs :xe_pickup ;
+            rdfs:label "xe bán tải"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_con
+:xe_con rdf:type owl:NamedIndividual ,
+                 :Transportation ;
+        owl:sameAs :xe_ô_tô_con ;
+        webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT> ;
+        webprotege:has_a :xe_3_bánh ,
+                         :xe_bán_tải ,
+                         :xe_tải_VAN ;
+        rdfs:label "xe con"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :xe_con ;
+   owl:annotatedProperty webprotege:has_a ;
+   owl:annotatedTarget :xe_3_bánh ;
+   :weight "lớn hơn 400"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :xe_con ;
+   owl:annotatedProperty webprotege:has_a ;
+   owl:annotatedTarget :xe_tải_VAN ;
+   :amountOfPermittedMerchandise "dưới 950kg"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_gắn_máy
+:xe_gắn_máy rdf:type owl:NamedIndividual ,
+                     :Transportation ;
+            rdfs:label "xe gắn máy"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_khách
+:xe_khách rdf:type owl:NamedIndividual ,
+                   :Transportation ;
+          owl:sameAs :ô_tô_khách ;
+          rdfs:label "xe khách"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy
+:xe_máy rdf:type owl:NamedIndividual ,
+                 :Transportation ;
+        rdfs:label "xe máy" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_chuyên_dùng
+:xe_máy_chuyên_dùng rdf:type owl:NamedIndividual ,
+                             :Transportation ;
+                    rdfs:label "xe máy chuyên dùng"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_điện
+:xe_máy_điện rdf:type owl:NamedIndividual ,
+                      :Transportation ;
+             webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019> ;
+             webprotege:is_a :xe_gắn_máy ;
+             :has_electric_motor_driven_system "true"^^xsd:boolean ;
+             :maximum_designed_speed "<=50km/h"^^xsd:string ;
+             :maximum_power_capacity "<=4kW"^^xsd:string ;
+             rdfs:label "xe máy điện"^^xsd:string ;
+             :exclude <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019> .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_pickup
+:xe_pickup rdf:type owl:NamedIndividual ,
+                    :Transportation ;
+           rdfs:label "xe pickup"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_thô_sơ
+:xe_thô_sơ rdf:type owl:NamedIndividual ,
+                    :Transportation ;
+           rdfs:label "xe thô sơ"^^xsd:string ;
+           :transportation "hai bánh có lắp động cơ, vận tốc thiết kế lớn nhất không lớn hơn 25 km/h và khi tắt máy thì đạp xe đi được (kể cả xe đạp điện)"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải
+:xe_tải rdf:type owl:NamedIndividual ,
+                 :Transportation ;
+        owl:sameAs :ô_tô_tải ;
+        rdfs:label "xe tải"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải_VAN
+:xe_tải_VAN rdf:type owl:NamedIndividual ,
+                     :Transportation ;
+            rdfs:label "xe tải VAN"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô
+:xe_ô_tô rdf:type owl:NamedIndividual ,
+                  :Transportation ;
+         rdfs:label "xe ô tô" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô_con
+:xe_ô_tô_con rdf:type owl:NamedIndividual ,
+                      :Transportation ;
+             webprotege:is_a :xe_ô_tô ;
+             :identifiedBy :Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ ;
+             :isPersonalTransportation "true"^^xsd:boolean ;
+             :maximumNumberOfSeatIncludingDriver 9 ;
+             rdfs:label "xe ô tô con"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_đạp_máy
+:xe_đạp_máy rdf:type owl:NamedIndividual ,
+                     :Transportation ;
+            webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019> ;
+            webprotege:is_a :xe_thô_sơ ;
+            :has_engine "true"^^xsd:boolean ;
+            :maximum_designed_speed "<=25km/h"^^xsd:string ;
+            :number_of_wheel "2"^^xsd:string ;
+            :specification "khi tắt máy thì đạp xe đi được"^^xsd:string ;
+            rdfs:label "xe đạp máy"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_khách
+:ô_tô_khách rdf:type owl:NamedIndividual ,
+                     :Transportation ;
+            webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT> ;
+            webprotege:is_a :xe_ô_tô ;
+            :identifiedBy :Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ ;
+            :isPersonalTransportation "true"^^xsd:boolean ;
+            :minimumNumberOfPeopleCarried 9 ;
+            rdfs:label "ô tô khách"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_kéo_rơ-móoc
+:ô_tô_kéo_rơ-móoc rdf:type owl:NamedIndividual ,
+                           :Transportation ;
+                  webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT> ;
+                  rdfs:label "ô tô kéo rơ-móoc"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_tải
+:ô_tô_tải rdf:type owl:NamedIndividual ,
+                   :Transportation ;
+          webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT> ;
+          webprotege:is_a :xe_ô_tô ;
+          :include :xe_tải_VAN ;
+          :specification "có kết cấu và trang bị chủ yếu để chuyên chở hàng hoá" ;
+          rdfs:label "ô tô tải"^^xsd:string ;
+          :include :ô_tô_kéo_rơ-móoc .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ô_tô_tải ;
+   owl:annotatedProperty :include ;
+   owl:annotatedTarget :xe_tải_VAN ;
+   :amountOfPermittedMerchandise "từ 950kg"
+ ] .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_đầu_kéo
+:ô_tô_đầu_kéo rdf:type owl:NamedIndividual ,
+                       :Transportation ;
+              rdfs:label "ô tô đầu kéo"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc
+:ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc rdf:type owl:NamedIndividual ,
+                                         :Transportation ;
+                                webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT> ;
+                                webprotege:is_a webprotege:Rgv8f427s8gY6MDo6fpgCh ;
+                                :isFreighTransport "true"^^xsd:boolean ;
+                                rdfs:label "ô tô đầu kéo kéo sơ-mi rơ-móoc"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường
+:đường rdf:type owl:NamedIndividual ,
+                :Object ;
+       webprotege:has_a :dải_phân_cách .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_bộ
+:đường_bộ rdf:type owl:NamedIndividual ,
+                   :Object ;
+          webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008> ;
+          webprotege:has_a :bến_phà_đường_bộ ,
+                           :cầu_đường_bộ ,
+                           :hầm_đường_bộ ,
+                           :đường ;
+          rdfs:label "đường bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_cho_các_phương_tiện_khác
+:đường_cho_các_phương_tiện_khác rdf:type owl:NamedIndividual ,
+                                         :Object ;
+                                rdfs:label "đường cho các phương tiện khác"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới
+:đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới rdf:type owl:NamedIndividual ,
+                                                            :Object ;
+                                                   webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT> ;
+                                                   webprotege:is_a :làn_đường ,
+                                                                   :phần_đường ,
+                                                                   :tuyến_đường ;
+                                                   :dedicated :phương_tiện_cơ_giới ;
+                                                   rdfs:label "đường dành riêng cho các loại phương tiện cơ giới"^^xsd:string ;
+                                                   :instructedBy :biển_báo_hiệu ,
+                                                                 :vạch_sơn .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ
+:đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ rdf:type owl:NamedIndividual ,
+                                                                     :Object ;
+                                                            webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT> ;
+                                                            webprotege:is_a :làn_đường ,
+                                                                            :phần_đường ,
+                                                                            :tuyến_đường ;
+                                                            rdfs:label "đường dành riêng cho các phương tiện thô sơ và người đi bộ"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_một_số_loại_phương_tiện
+:đường_dành_riêng_cho_một_số_loại_phương_tiện rdf:type owl:NamedIndividual ,
+                                                       :Object ;
+                                              webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT> ;
+                                              webprotege:is_a :làn_đường ,
+                                                              :phần_đường ,
+                                                              :tuyến_đường ;
+                                              :specification """dành riêng cho một hoặc một vài loại phương tiện được lưu 
+thông""" ;
+                                              rdfs:label "đường dành riêng cho một số loại phương tiện"^^xsd:string ;
+                                              :instructedBy :biển_báo_hiệu ,
+                                                            :vạch_sơn .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_hai_chiều
+:đường_hai_chiều rdf:type owl:NamedIndividual ,
+                          :Object ;
+                 webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT> ;
+                 webprotege:has_a :phần_tách_biệt_giữa_chiều_đi_và_về_trên_đường_hai_chiều ;
+                 webprotege:is_a :đường ;
+                 :dùng_chung :chiều_về ,
+                             :chiều_đi ;
+                 rdfs:label "đường hai chiều" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_không_ưu_tiên
+:đường_không_ưu_tiên rdf:type owl:NamedIndividual ,
+                              :Object ;
+                     webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT> ;
+                     webprotege:is_a :đường ;
+                     :intersect :đường_ưu_tiên ;
+                     rdfs:label "đường không ưu tiên" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_một_chiều
+:đường_một_chiều rdf:type owl:NamedIndividual ,
+                          :Object ;
+                 webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT> ;
+                 webprotege:is_a :đường ;
+                 :một_chiều "true"^^xsd:boolean ;
+                 rdfs:label "đường một chiều" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_qua_khu_đông_dân_cư
+:đường_qua_khu_đông_dân_cư rdf:type owl:NamedIndividual ,
+                                    :Object ;
+                           webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT> ;
+                           webprotege:has_a :biển_báo_đường_qua_khu_đông_dân_cư ;
+                           webprotege:is_a :đường_bộ ;
+                           :specification "nằm trong khu vực nội thành phố, nội thị xã, nội thị trấn và những đoạn đường có dân cư sinh sống sát dọc theo đường, có các hoạt động có thể ảnh hưởng đến an toàn giao thông đường bộ"^^xsd:string ;
+                           rdfs:label "đường qua khu đông dân cư"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_đô_thị
+:đường_đô_thị rdf:type owl:NamedIndividual ,
+                       :Object ;
+              webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT> ;
+              webprotege:is_a :đường ;
+              :specification "nằm trong phạm vi địa giới hành chính nội thành, nội thị xã và thị trấn"^^xsd:string ;
+              rdfs:label "đường đô thị"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_đôi
+:đường_đôi rdf:type owl:NamedIndividual ,
+                    :Object ;
+           webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT> ;
+           webprotege:is_a :đường ;
+           rdfs:label "đường đôi" .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_ưu_tiên
+:đường_ưu_tiên rdf:type owl:NamedIndividual ,
+                        :Object ;
+               webprotege:defined_in <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT> ;
+               webprotege:is_a :đường ;
+               :placed :biển_báo_hiệu_đường_ưu_tên ;
+               :specification """mà trên đó phương tiện tham gia giao thông được 
+các phương tiện giao thông đến từ hướng khác nhường đường khi qua nơi đường giao nhau"""^^xsd:string ;
+               rdfs:label "đường ưu tiên"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đầu_máy
+:đầu_máy rdf:type owl:NamedIndividual ,
+                  :Object ;
+         :driven :càng ,
+                 :vô_lăng ;
+         rdfs:label "đầu máy" ;
+         :transportation "tự di chuyển"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008> rdf:type owl:NamedIndividual ,
+                                                                                    webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#10-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#10-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#23-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#23-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-53/2008
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-53/2008> rdf:type owl:NamedIndividual ,
+                                                                                  webprotege:Article ;
+                                                                         webprotege:has_clause <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008> .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-QCVN_41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-QCVN_41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                             webprotege:Article ;
+                                                                                    webprotege:has_clause <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#10-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#23-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#58-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT> ,
+                                                                                                          <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT> ;
+                                                                                    rdfs:label "3-41:2019/BGTVT"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                      webprotege:Document ;
+                                                                             webprotege:has_article <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-QCVN_41:2019/BGTVT> ;
+                                                                             rdfs:label "41:2019/BGTVT"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#53/2008
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#53/2008> rdf:type owl:NamedIndividual ,
+                                                                                webprotege:Document ;
+                                                                       webprotege:has_article <urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-53/2008> ;
+                                                                       rdfs:comment "53/2008"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#58-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#58-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                           webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT> rdf:type owl:NamedIndividual ,
+                                                                                          webprotege:Clause .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019> rdf:type owl:NamedIndividual ,
+                                                                                       webprotege:Point .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019> rdf:type owl:NamedIndividual ,
+                                                                                       webprotege:Point .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019> rdf:type owl:NamedIndividual ,
+                                                                                       webprotege:Point .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019> rdf:type owl:NamedIndividual ,
+                                                                                       webprotege:Point .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019> rdf:type owl:NamedIndividual ,
+                                                                                       webprotege:Point ;
+                                                                              rdfs:label "e-1-3-100/2019"^^xsd:string .
+
+
+###  urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019
+<urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019> rdf:type owl:NamedIndividual ,
+                                                                                       webprotege:Point .
+
+
+[ rdf:type :Transportation ;
+  rdfs:label "xe tải VAN" ;
+  :weight 950
+] .
+
+_:genid20 rdf:type :Object ;
+           webprotege:has_a :chiều_về ,
+                            :chiều_đi .
+
+[ rdf:type :Misc ;
+   rdfs:label "a"
+ ] .
+
+_:genid22 rdf:type :Object ;
+           :dùng_chung :chiều_về ,
+                       :chiều_đi ;
+           rdfs:label "a" .
+
+[ rdf:type :Object
+ ] .
+
+[ :include :xe_máy_điện
+ ] .
+
+[ :exclude :vạch_sơn
+ ] .
+
+[ :pulledBy :xe_ô_tô
+ ] .
+
+_:genid27 :measureBy :kilogam ,
+                      :ton .
+
+_:genid28 :separatedBy :dải_phân_cách ,
+                        :vạch_sơn_dọc_liền .
+
+_:genid29 :separatedBy :dải_phân_cách ,
+                        :vạch_sơn_dọc_liền .
+
+[ :pulledBy :xe_ô_tô
+ ] .
+
+[ :prescribedAt :Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ
+ ] .
+
+[ rdfs:label "đường qua khu đông dân cư"
+ ] .
+
+[ :specification "xe" ;
+   rdfs:label "add"
+ ] .
+
+[ :specification "đường qua khu đông dân cư"^^xsd:string
+ ] .
+
+[ :specification "đường qua khu đông dân cư"^^xsd:string
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+webprotege:R7O8ZiTr3i8T6G6nvezrPHN rdfs:comment "Object"^^xsd:string .
+
+
+:active rdfs:label "chủ động" .
+
+
+:amountOfPermittedMerchandise rdfs:label "khối lượng hàng hoá chuyên chở cho phép tham gia giao thông" .
+
+
+:designedFor rdfs:label "được thiết kế" .
+
+
+:exclude rdfs:label "ngoại trừ"^^xsd:string ;
+         rdfs:comment "Indicate that this law is true if exclude the other"^^xsd:string .
+
+
+:include rdfs:label "bao gồm"^^xsd:string .
+
+
+:instructedBy rdfs:label "được chỉ dẫn"^^xsd:string .
+
+
+:mathematics rdfs:label "toán học" .
+
+
+:notContains rdfs:label "không có"^^xsd:string .
+
+
+:notCounting rdfs:label "không kể đến" ;
+             rdfs:seeAlso :notContains .
+
+
+:numberOfRoad rdfs:label "số lượng con đường" .
+
+
+:numberOfWheel rdfs:label "số bánh xe" .
+
+
+:passive rdfs:label "bị động" .
+
+
+:prescribedAt rdfs:label "được quy định trong" .
+
+
+:pulledBy rdfs:label "được kéo bởi" .
+
+
+:scope rdfs:label "phạm vi"^^xsd:string .
+
+
+:separatedBy rdfs:label "được tách biệt bởi" .
+
+
+:transportation rdfs:label "phương tiện"^^xsd:string .
+
+
+:weight rdfs:label "khối lượng" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

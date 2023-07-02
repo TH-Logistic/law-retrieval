@@ -1,0 +1,11 @@
+pydantic
+numpy
+spacy==3.0.9
+pyvi
+pandas
+ampligraph
+neo4j
+autopep8
+yake
+underthesea
+# pke

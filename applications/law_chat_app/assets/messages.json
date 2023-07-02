@@ -1,0 +1,122 @@
+[
+  {
+    "author": {
+      "firstName": "Traffic-Law",
+      "id": "4c2307ba-3d40-442f-b1ff-b271f63904ca",
+      "lastName": "Model"
+    },
+    "createdAt": 1655648401100,
+    "id": "c67ed376-52bf-4d4e-ba2a-7a0f8467b22a",
+    "status": "seen",
+    "text": "Điều 62 Luật giao thông đường bộ năm 2008, người điều khiển xe máy chuyên dùng tham gia giao thông phải đáp ứng điều kiện sau: \n- Người điều khiển xe máy chuyên dùng tham gia giao thông phải đủ độ tuổi, sức khỏe phù hợp với ngành nghề lao động và có chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ, bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng do cơ sở đào tạo người điều khiển xe máy chuyên dùng cấp. \n- Người điều khiển xe máy chuyên dùng khi tham gia giao thông phải mang theo các giấy tờ sau đây: Đăng ký xe; Chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ, bằng hoặc chứng chỉ điều khiển xe máy chuyên dùng; Giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường đối với xe máy chuyên dùng quy định tại Điều 57 của Luật này.",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Matthew",
+      "id": "82091008-a484-4a89-ae75-a22bf8d6f3ac",
+      "lastName": "White"
+    },
+    "createdAt": 1655648401000,
+    "id": "64747b28-df19-4a0c-8c47-316dc3546e3c",
+    "status": "seen",
+    "text": "Người điều khiển xe máy chuyên dùng khi tham gia giao thông phải đáp ứng điều kiện nào?",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Traffic-Law",
+      "id": "4c2307ba-3d40-442f-b1ff-b271f63904ca",
+      "lastName": "Model"
+    },
+    "createdAt": 1655648401000,
+    "id": "c67ed376-52bf-4d4e-ba2a-7a0f8467b22a",
+    "status": "seen",
+    "text": "Khoản 20 Điều 3 Luật giao thông đường bộ năm 2008, Xe máy chuyên dùng gồm xe máy thi công, xe máy nông nghiệp, lâm nghiệp và các loại xe đặc chủng khác sử dụng vào mục đích quốc phòng, an ninh có tham gia giao thông đường bộ.",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Matthew",
+      "id": "82091008-a484-4a89-ae75-a22bf8d6f3ac",
+      "lastName": "White"
+    },
+    "createdAt": 1655648401000,
+    "id": "64747b28-df19-4a0c-8c47-316dc3546e3c",
+    "status": "seen",
+    "text": "Xe máy chuyên dùng là xe gì?",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Traffic-Law",
+      "id": "4c2307ba-3d40-442f-b1ff-b271f63904ca",
+      "lastName": "Model"
+    },
+    "createdAt": 1655648401100,
+    "id": "c67ed376-52bf-4d4e-ba2a-7a0f8467b22a",
+    "status": "seen",
+    "text": "Điều 21 Nghị định số 100/2019/NĐ-CP quy định về xử phạt như sau:\n- Phạt cảnh cáo người từ đủ 14 tuổi đến dưới 16 tuổi điều khiển xe mô tô, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự xe mô tô hoặc điều khiển xe ô tô, máy kéo và các loại xe tương tự xe ô tô.\n- Phạt tiền từ 400.000 đồng đến 600.000 đồng đối với Người từ đủ 16 tuổi đến dưới 18 tuổi điều khiển xe mô tô có dung tích xi lanh từ 50 cm3 trở lên;\n - Phạt tiền từ 1.200.000 đồng đến 3.000.000 đồng đối với người từ đủ 16 tuổi đến dưới 18 tuổi điều khiển xe ô tô, máy kéo, các loại xe tương tự xe ô tô.",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Matthew",
+      "id": "82091008-a484-4a89-ae75-a22bf8d6f3ac",
+      "lastName": "White"
+    },
+    "createdAt": 1655648401000,
+    "id": "64747b28-df19-4a0c-8c47-316dc3546e3c",
+    "status": "seen",
+    "text": "Người điều khiển phương tiện giao thông vi phạm quy định về độ tuổi bị xử phạt như thế nào?",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Traffic-Law",
+      "id": "4c2307ba-3d40-442f-b1ff-b271f63904ca",
+      "lastName": "Model"
+    },
+    "createdAt": 1655648401100,
+    "id": "c67ed376-52bf-4d4e-ba2a-7a0f8467b22a",
+    "status": "seen",
+    "text": "Khoản 1 Điều 60 Luật giao thông đường bộ năm 2008 quy định độ tuổi của người lái xe như sau: \n- Người đủ 16 tuổi trở lên được lái xe gắn máy có dung tích xi-lanh dưới 50 cm3; \n- Người đủ 18 tuổi trở lên được lái xe mô tô hai bánh,xe mô tô ba bánh có dung tích xi-lanh từ 50 cm3 trở lên và các loại xe có kết cấu tương tự; xe ô tô tải, máy kéo có trọng tải dưới 3.500 kg; xe ô tô chở người đến 9 chỗ ngồi;",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Matthew",
+      "id": "82091008-a484-4a89-ae75-a22bf8d6f3ac",
+      "lastName": "White"
+    },
+    "createdAt": 1655648401000,
+    "id": "64747b28-df19-4a0c-8c47-316dc3546e3c",
+    "status": "seen",
+    "text": "Luật giao thông đường bộ 2008 quy định độ tuổi của người lái xe gắn máy, xe mô tô là bao nhiêu?",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Traffic-Law",
+      "id": "4c2307ba-3d40-442f-b1ff-b271f63904ca",
+      "lastName": "Model"
+    },
+    "createdAt": 1655648401100,
+    "id": "c67ed376-52bf-4d4e-ba2a-7a0f8467b22a",
+    "status": "seen",
+    "text": "Điều 14 Nghị định số 100/2019/NĐ-CP quy định về xử phạt đối với Tổ chức, cá nhân có hành vi vi phạm quy định về xây dựng bến xe, bãi đỗ xe, tạm dừng nghỉ như sau:\n- Phạt tiền từ 15.000.000 đồng đến 20.000.000 đồng đối với cá nhân, từ 30.000.000 đồng đến 40.000.000 đồng đối với tổ chức thực hiện hành vi Xây dựng hoặc thành lập bến xe, bãi đỗ xe, trạm dừng nghỉ, trạm thu phí đường bộ khi chưa được cơ quan quản lý nhà nước về giao thông vận tải đồng ý theo quy định. Ngoài ra còn bị áp dụng biện pháp khắc phục hậu quả là buộc tháo dỡ công trình xây dựng trái phép và khôi phục tình trạng ban đầu đã bị thay đổi do vi phạm hành chính gây ra.",
+    "type": "text"
+  },
+  {
+    "author": {
+      "firstName": "Matthew",
+      "id": "82091008-a484-4a89-ae75-a22bf8d6f3ac",
+      "lastName": "White"
+    },
+    "createdAt": 1655648401000,
+    "id": "64747b28-df19-4a0c-8c47-316dc3546e3c",
+    "status": "seen",
+    "text": "Nghị định số 100/2019/NĐ-CP quy định về xử phạt đối với Tổ chức, cá nhân có hành vi vi phạm quy định về xây dựng bến xe, bãi đỗ xe, tạm dừng nghỉ như thế nào?",
+    "type": "text"
+  }
+]

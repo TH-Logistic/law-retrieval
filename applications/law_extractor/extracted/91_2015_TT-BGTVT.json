@@ -1,0 +1,302 @@
+[
+    {
+        "index": 1,
+        "title": "Phạm vi điều chỉnh",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Thông tư này quy định về tốc độ và khoảng cách của xe cơ giới, xe máy chuyên dùng khi tham gia giao thông đường bộ, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định của pháp luật.",
+        "keyphrases": [],
+        "clauses": []
+    },
+    {
+        "index": 2,
+        "title": "Đối tượng áp dụng",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Thông tư này áp dụng đối với người lái xe, người điều khiển xe máy chuyên dùng, cơ quan, tổ chức, cá nhân liên quan đến quản lý và thực hiện các quy định về tốc độ và khoảng cách an toàn của xe cơ giới, xe máy chuyên dùng khi tham gia giao thông đường bộ.",
+        "keyphrases": [],
+        "clauses": []
+    },
+    {
+        "index": 3,
+        "title": "Giải thích từ ngữ",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Trong Thông tư này, các từ ngữ dưới đây được hiểu như sau:",
+        "keyphrases": [],
+        "clauses": [
+            {
+                "index": 1,
+                "content": "Đường bộ trong khu vực đông dân cư là đoạn đường bộ nằm trong khu vực nội thành phố, nội thị xã và những đoạn đường có dân cư sinh sống sát dọc theo đường, có các hoạt động có thể ảnh hưởng đến an toàn giao thông đường bộ và được xác định bằng biển báo là đường qua khu đông dân cư (khi cần thiết có thể xác định riêng cho từng chiều đường).\n\nĐối với đoạn đường nằm trong khu vực nội thành phố, nội thị xã: Căn cứ vào mức độ đô thị hóa và mật độ dân cư sinh sống bên đường để đặt biển báo hiệu “Bắt đầu khu đông dân cư” (Biển số 420) và biển báo hiệu “Hết khu đông dân cư” (Biển số 421) trên các tuyến đường ở vị trí vào, ra đô thị cho phù hợp (không đặt biển báo theo địa giới hành chính được quy hoạch, nếu chưa đô thị hóa hoặc dân cư thưa thớt); Biển số 420 có hiệu lực khu đông dân cư đối với tất cả các tuyến đường nằm trong khu vực đô thị cho đến vị trí đặt biển số 421.\n\nĐối với đoạn đường nằm ngoài nội thành phố, nội thị xã: Đoạn đường được xác định là qua khu đông dân cư khi có chiều dài từ 500 m trở lên, các lối ra vào nhà trực tiếp với đường có cự ly trung bình từ 6 m trở xuống theo chiều ngang; mật độ các lối ra vào nhà trung bình dưới 10 m.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 2,
+                "content": "Xe cơ giới gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy (kể cả xe máy điện) và các loại xe tương tự.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 3,
+                "content": "Ô tô chuyên dùng là ô tô có kết cấu và trang bị để thực hiện một chức năng công dụng đặc biệt, bao gồm: Ô tô quét đường; ô tô hút chất thải; ô tô trộn vữa; ô tô trộn bê tông; ôtô bơm bê tông; ô tô cần cẩu; ô tô thang; ô tô khoan; ô tô cứu hộ giao thông; ô tô chuyên dùng loại khác như ô tô truyền hình lưu động, ô tô đo sóng truyền hình lưu động, ô tô kiểm tra và bảo dưỡng cầu, ô tô kiểm tra cáp điện ngầm, ô tô chụp X-quang, ô tô phẫu thuật lưu động.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 4,
+                "content": "Xe máy chuyên dùng gồm xe máy thi công, xe máy nông nghiệp, lâm nghiệp và các loại xe đặc chủng khác sử dụng vào mục đích quốc phòng, an ninh có tham gia giao thông đường bộ.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 5,
+                "content": "Dải phân cách giữa là bộ phận của đường mà xe không chạy trên đó, được dùng để phân chia mặt đường thành hai phần xe chạy ngược chiều riêng biệt (các dạng chủ yếu: bó vỉa, dải phân cách kết cấu bê tông, hộ lan tôn sóng, hoặc dải đất dự trữ).",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 6,
+                "content": "Đường đôi là đường có chiều đi và về được phân biệt bằng dải phân cách giữa.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 7,
+                "content": "Đường một chiều là đường chỉ cho đi một chiều.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 8,
+                "content": "Đường hai chiều là đường có cả hai chiều đi và về trên cùng một phần đường xe chạy, không được phân biệt bằng dải phân cách giữa.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 9,
+                "content": "Trọng tải là khối lượng hàng hóa cho phép chuyên chở được xác định theo Giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông cơ giới đường bộ.",
+                "keyphrases": [],
+                "points": []
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "title": "Nguyên tắc chung khi điều khiển phương tiện trên đường bộ về tốc độ và khoảng cách",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "",
+        "keyphrases": [],
+        "clauses": [
+            {
+                "index": 1,
+                "content": "Khi tham gia giao thông trên đường bộ (trừ đường cao tốc), kể cả đường nhánh ra vào đường cao tốc, người điều khiển phương tiện tham gia giao thông đường bộ phải nghiêm chỉnh chấp hành các quy định về tốc độ, khoảng cách an toàn tối thiểu giữa hai xe (thuộc chủng loại xe cơ giới và xe máy chuyên dùng) được ghi trên biển báo hiệu đường bộ; tại những đoạn đường không có biển báo hiệu đường bộ quy định về tốc độ, quy định về khoảng cách an toàn tối thiểu giữa hai xe, người điều khiển phương tiện tham gia giao thông phải thực hiện các quy định tại Thông tư này.\n\nRiêng tốc độ, khoảng cách an toàn xe máy chuyên dùng, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự chỉ phải tuân thủ theo quy định tại Điều 8 và Điều 12 của Thông tư này.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 2,
+                "content": "Khi tham gia giao thông trên đường cao tốc, đối với các loại xe cơ giới, xe máy chuyên dùng được phép đi vào đường cao tốc theo quy định của Luật Giao thông đường bộ, người điều khiển phương tiện tham gia giao thông trên đường cao tốc phải nghiêm chỉnh chấp hành các quy định về tốc độ, khoảng cách an toàn tối thiểu theo quy định tại Điều 9 và Điều 12 của Thông tư này.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 3,
+                "content": "Người điều khiển phương tiện tham gia giao thông đường bộ phải điều khiển xe chạy với tốc độ phù hợp với điều kiện của cầu, đường, mật độ giao thông, địa hình, thời tiết và các yếu tố ảnh hưởng khác để bảo đảm an toàn giao thông.",
+                "keyphrases": [],
+                "points": []
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "title": "Các trường hợp phải giảm tốc độ",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Người điều khiển phương tiện tham gia giao thông đường bộ phải giảm tốc độ thấp hơn tốc độ tối đa cho phép (có thể dừng lại một cách an toàn) trong các trường hợp sau:",
+        "keyphrases": [],
+        "clauses": [
+            {
+                "index": 1,
+                "content": "Có biển cảnh báo nguy hiểm hoặc có chướng ngại vật trên đường.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 2,
+                "content": "Chuyển hướng xe chạy hoặc tầm nhìn bị hạn chế.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 3,
+                "content": "Qua nơi đường bộ giao nhau cùng mức; nơi đường bộ giao nhau cùng mức với đường sắt; đường vòng; đường có địa hình quanh co, đèo dốc; đoạn đường mà mặt đường không êm thuận.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 4,
+                "content": "Qua cầu, cống hẹp; khi lên gần đỉnh dốc, khi xuống dốc.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 5,
+                "content": "Qua khu vực có trường học, bệnh viện, bến xe, công trình công cộng tập trung nhiều người; khu vực đông dân cư, nhà máy, công sở tập trung bên đường; khu vực đang thi công trên đường bộ; hiện trường xảy ra tai nạn giao thông.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 6,
+                "content": "Khi có người đi bộ, xe lăn của người khuyết tật qua đường.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 7,
+                "content": "Có súc vật đi trên đường hoặc chăn thả ở sát đường.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 8,
+                "content": "Tránh xe chạy ngược chiều hoặc khi cho xe chạy sau vượt.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 9,
+                "content": "Đến gần bến xe buýt, điểm dừng đỗ xe có khách đang lên, xuống xe.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 10,
+                "content": "Gặp xe ưu tiên đang thực hiện nhiệm vụ; gặp xe quá khổ, quá tải, xe chở hàng nguy hiểm; gặp đoàn người đi bộ.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 11,
+                "content": "Trời mưa; có sương mù, khói, bụi; mặt đường trơn trượt, lầy lội, có nhiều đất đá, cát bụi rơi vãi.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 12,
+                "content": "Khi điều khiển phương tiện đi qua khu vực trạm kiểm soát tải trọng xe, trạm cảnh sát giao thông, trạm thu phí.",
+                "keyphrases": [],
+                "points": []
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "title": "Tốc độ tối đa cho phép đối với xe máy chuyên dùng, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự trên đường bộ (trừ đường cao tốc)",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Đối với xe máy chuyên dùng, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự khi tham gia giao thông thì tốc độ tối đa được xác định theo báo hiệu đường bộ và không quá 40 km/h.",
+        "keyphrases": [],
+        "clauses": []
+    },
+    {
+        "index": 7,
+        "title": "Tốc độ của các loại xe cơ giới, xe máy chuyên dùng trên đường cao tốc",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Khi tham gia giao thông trên đường cao tốc, người điều khiển xe cơ giới, xe máy chuyên dùng phải tuân thủ tốc độ tối đa, tốc độ tối thiểu ghi trên biển báo hiệu đường bộ.\n\nTốc độ tối đa cho phép khai thác trên đường cao tốc không vượt quá 120 km/h.",
+        "keyphrases": [],
+        "clauses": []
+    },
+    {
+        "index": 8,
+        "title": "Đặt biển báo hiệu tốc độ, biển báo hiệu khu đông dân cư",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "",
+        "keyphrases": [],
+        "clauses": [
+            {
+                "index": 1,
+                "content": "Việc đặt biển báo hiệu tốc độ thực hiện theo quy định của pháp luật về báo hiệu đường bộ hiện hành và phải căn cứ vào tình hình thực tế của đoạn, tuyến đường bộ cho phù hợp.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 2,
+                "content": "Trên các đường nhánh ra, vào đường cao tốc, trường hợp đặt các biển cảnh báo hoặc biển hạn chế tốc độ thì giá trị tốc độ ghi trên biển cảnh báo, biển hạn chế tốc độ không được dưới 50 km/h.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 3,
+                "content": "Việc đặt biển báo hiệu “Bắt đầu khu đông dân cư” và biển báo hiệu “Hết khu đông dân cư” thực hiện theo quy định của pháp luật về báo hiệu đường bộ và phải căn cứ vào tình hình dân cư thực tế hai bên đường bộ",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 4,
+                "content": "Không đặt biển báo hiệu khu đông dân cư đối với các đoạn tuyến chưa đô thị hóa, dân cư thưa thớt và tầm nhìn không bị hạn chế.\n\nTrong quá trình khai thác, đơn vị quản lý đường bộ chịu trách nhiệm theo dõi, chủ động kịp thời điều chỉnh, bổ sung các biển báo nêu trên cho phù hợp với thực tế và quy định hiện hành.",
+                "keyphrases": [],
+                "points": []
+            }
+        ]
+    },
+    {
+        "index": 9,
+        "title": "Giữ khoảng cách an toàn tối thiểu giữa hai xe",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Khi điều khiển xe tham gia giao thông trên đường bộ, người lái xe, người điều khiển xe máy chuyên dùng phải giữ một khoảng cách an toàn đối với xe chạy liền trước xe của mình; ở nơi có biển báo “Cự ly tối thiểu giữa hai xe” phải giữ khoảng cách không nhỏ hơn số ghi trên biển báo.",
+        "keyphrases": [],
+        "clauses": []
+    },
+    {
+        "index": 10,
+        "title": "Trách nhiệm của các cơ quan quản lý đường bộ",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "",
+        "keyphrases": [],
+        "clauses": [
+            {
+                "index": 1,
+                "content": "Tổng cục Đường bộ Việt Nam có trách nhiệm tổ chức thực hiện Thông tư này.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 2,
+                "content": "Tổng cục Đường bộ Việt Nam, Cục Quản lý đường bộ, Sở Giao thông vận tải, Ủy ban nhân dân cấp huyện, Ủy ban nhân dân cấp xã có trách nhiệm thường xuyên kiểm tra, lắp đặt các báo hiệu đường bộ có liên quan đến tốc độ, khoảng cách an toàn giữa hai xe và biển báo hiệu “Bắt đầu khu đông dân cư”, biển báo hiệu “Hết khu đông dân cư” theo quy định của pháp luật.",
+                "keyphrases": [],
+                "points": []
+            }
+        ]
+    },
+    {
+        "index": 11,
+        "title": "Hiệu lực thi hành",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "Thông tư này có hiệu lực kể từ ngày 01 tháng 3 năm 2016 và thay thế Thông tư số 13/2009/TT-BGTVT ngày 17 tháng 7 năm 2009 của Bộ trưởng Bộ Giao thông vận tải quy định về tốc độ và khoảng cách của xe cơ giới, xe máy chuyên dùng tham gia giao thông đường bộ.",
+        "keyphrases": [],
+        "clauses": []
+    },
+    {
+        "index": 12,
+        "title": "Tổ chức thực hiện",
+        "documentId": "91_2015_TT-BGTVT",
+        "content": "",
+        "keyphrases": [],
+        "clauses": [
+            {
+                "index": 1,
+                "content": "Chánh Văn phòng Bộ, Chánh Thanh tra Bộ, các Vụ trưởng, Chủ tịch Ủy ban nhân dân các tỉnh, thành phố trực thuộc Trung ương, Tổng cục trưởng Tổng cục Đường bộ Việt Nam, Giám đốc các Sở Giao thông vận tải, Thủ trưởng các cơ quan, tổ chức và cá nhân có liên quan chịu trách nhiệm thực hiện Thông tư này.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 2,
+                "content": "Tổng cục Đường bộ Việt Nam tổ chức kiểm tra công tác đặt biển báo hiệu hạn chế tốc độ, biển báo hiệu khu đông dân cư.",
+                "keyphrases": [],
+                "points": []
+            },
+            {
+                "index": 3,
+                "content": "Trong quá trình thực hiện, nếu phát sinh các vướng mắc thì các cơ quan, đơn vị, cá nhân kịp thời phản ánh về Tổng cục Đường bộ Việt Nam để tổng hợp, đề xuất với Bộ Giao thông vận tải xem xét, giải quyết./",
+                "keyphrases": [],
+                "points": []
+            }
+        ]
+    }
+]
