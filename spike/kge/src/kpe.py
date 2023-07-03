@@ -3,6 +3,8 @@ from .stopwords import get_stop_words
 import yake
 import spacy
 import pytextrank
+import py_vncorenlp
+import os
 
 
 class KeyPhraseExtraction:
@@ -33,3 +35,14 @@ class KeyPhraseExtraction:
             print(phrase.rank, phrase.count)
             print(phrase.chunks)
         return text
+
+    @staticmethod
+    def phobert(text: str):
+        py_vncorenlp.download_model(os.getcwd() + '/py_vncorenlp_model')
+        rdrsegmenter = py_vncorenlp.VnCoreNLP(
+            annotators=["wseg"],
+            save_dir='./py_vncorenlp_model'
+        )
+        ouput = rdrsegmenter.word_segment(text)
+        print(ouput)
+        pass

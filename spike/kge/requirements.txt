@@ -8,4 +8,11 @@ neo4j
 autopep8
 yake
 underthesea
+pytextrank
+py_vncorenlp
 # pke
+
+networkx
+nltk
+sklearn
+matplotlib
