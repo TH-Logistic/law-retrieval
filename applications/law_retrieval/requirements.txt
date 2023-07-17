@@ -11,3 +11,6 @@ pytest
 pymongo
 sqlalchemy
 neo4j
+
+pyvi
+spacy
