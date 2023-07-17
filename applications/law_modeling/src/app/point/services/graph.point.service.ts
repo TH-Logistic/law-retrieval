@@ -14,7 +14,7 @@ export class GraphPointService {
                     MATCH (clause: Clause)
                     WHERE id(clause) = $clauseId
 
-                    MERGE (point: Point {content: $content, index: $index}) 
+                    MERGE (point: Point {content: toLower($content), index: $index}) 
                     MERGE (point)<-[:HAS_POINT]-(clause)
 
                     WITH point

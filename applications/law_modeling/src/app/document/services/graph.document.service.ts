@@ -10,7 +10,7 @@ export class GraphDocumentService {
         await this.neo4jService.write(
             `
                 UNWIND $keyphrases as keyphrase
-                MERGE (document: Document {title: $title, code: $code})
+                MERGE (document: Document {title: toLower($title), code: $code})
                 MERGE (key: Keyphrase {content: toLower(trim(keyphrase))})
                 MERGE (document)-[:HAS_KEYPHRASE]->(key)
                 RETURN document

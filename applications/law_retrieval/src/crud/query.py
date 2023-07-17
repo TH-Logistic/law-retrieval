@@ -89,8 +89,6 @@ class QueryService:
         # nodes = list(map(lambda n: n["node"], nodes))
         return result
 
-        return []
-
         # for i in range(len(nodes)):
         #     similarity = question.similarity(nlp(nodes[i].content.lower()))
         #     print(i, question.similarity(nlp(nodes[i].content.lower())))
