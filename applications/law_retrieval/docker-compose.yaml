@@ -36,7 +36,8 @@ services:
     volumes:
       - ./docker/graph/plugins:/var/lib/neo4j/plugins
       - ./docker/graph/data:/data/rdf
-      # - ./docker/graph/config/apoc.conf:/var/lib/neo4j/conf/apoc.conf
+      - ./docker/graph/data/:/var/lib/neo4j/import
+      - ./docker/graph/config/apoc.conf:/var/lib/neo4j/conf/apoc.conf
       # - ./docker/graph/conf:/var/lib/neo4j/conf
     restart: always
     profiles:

@@ -1,0 +1,3595 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#"
+     xml:base="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d"
+     xmlns:law="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:webprotege="http://webprotege.stanford.edu/">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#belongTo -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#belongTo">
+        <rdfs:label>thuộc về</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#possess"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#possess"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfRoad -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfRoad">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#possess -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#possess">
+        <rdfs:label>sở hữu</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt">
+        <rdfs:range rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy"/>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#state -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#state">
+        <rdfs:label>trạng thái</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes -->
+
+    <owl:AnnotationProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#law:attributes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/a_part_of -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/a_part_of">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/possess"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">một phần của</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/defined_by -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/defined_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Define the dependence of a concept on another</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">định nghĩa bởi</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/defined_in -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/defined_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Document"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identify a concept is declared by a law element</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được định nghĩa trong</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/element_relation -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/element_relation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Define the relation between law elements</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quan hệ giữa các thành phần luật</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/has_a -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/has_a">
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#at"/>
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dùng_chung"/>
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#placed"/>
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/possess"/>
+        <owl:inverseOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#không_có"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/has_article -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/has_article">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/element_relation"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Document"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có điều luật</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/has_clause -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/has_clause">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/element_relation"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có khoản luật</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/has_point -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/has_point">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/element_relation"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có điểm luật</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/is_a -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/is_a">
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#meaning"/>
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/possess"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">là</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/possess -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/possess">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/defined_by"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Define the type of possess relation between 2 concepts</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sở hữu</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#actions -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#actions">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/defined_by"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hành động</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#actions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#add -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#add">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics"/>
+        <rdfs:label>cộng</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#at -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#at">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/possess"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mà trên đó</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#belongToArticle -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#belongToArticle">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/element_relation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thuộc điều luật</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#control -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#control">
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#drive"/>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">điều khiển</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cộng">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dedicate -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dedicate">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+        <owl:inverseOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dedicated"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dành riêng cho</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dedicated -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dedicated">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được dành riêng cho</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#direct -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#direct">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+        <owl:inverseOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chỉ dẫn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#distinguished -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#distinguished">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được phân biệt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#divided -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#divided">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được chia theo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#drive -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#drive">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+        <owl:inverseOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#driven"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#driven -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#driven">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được lái</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dùng_chung -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dùng_chung">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dùng chung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#equal -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#equal">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics"/>
+        <rdfs:label>bằng</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#identifiedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#identifiedBy">
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt"/>
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#writtenRespectively"/>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được xác định theo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#intersect -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#intersect">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#position"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">giao cùng mức</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#không_có -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#không_có">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/possess"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">không có</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#link -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#link">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liên kết</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/defined_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#meaning -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#meaning">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/possess"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chỉ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#measureBy -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#measureBy">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mentionedIn -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mentionedIn">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#link"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được nhắc đến trong</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#only -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#only">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duy nhất</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#actions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phân_bổ_trên -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phân_bổ_trên">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phân bổ trên</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#placed -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#placed">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdfs:label>được đặt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#position -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#position">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/defined_by"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vị trí</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt">
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#writtenRespectively"/>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <owl:inverseOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separated_with"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separated_by -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separated_by">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#position"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tách biệt bởi</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separated_with -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separated_with">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#position"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tách biệt với</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#towed -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#towed">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được kéo theo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#writtenRespectively -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#writtenRespectively">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdfs:label>được ghi theo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_kết_nối -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_kết_nối">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được kết nối với</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_sử_dụng -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_sử_dụng">
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#để"/>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được sử dụng</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#để -->
+
+    <owl:ObjectProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#để">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#attributes -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#attributes">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thuộc tính</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chạy_bằng_điện -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chạy_bằng_điện">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>chạy bằng điện</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chạy_trên_đường_ray -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chạy_trên_đường_ray">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>chạy trên đường ray</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#engine_displacement -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#engine_displacement">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dung tích làm việc của động cơ</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#has_electric_motor_driven_system -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#has_electric_motor_driven_system">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dẫn bằng động cơ điện</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#has_engine -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#has_engine">
+        <owl:equivalentProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#run_by_engine"/>
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có lắp động cơ</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#isFreighTransport -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#isFreighTransport">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chuyên chở hàng hoá</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#isPersonalTransportation -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#isPersonalTransportation">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>để chở người</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximumNumberOfPeopleCarried -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximumNumberOfPeopleCarried">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:label>chở người với số lượng tối đa</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximumNumberOfSeatIncludingDriver -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximumNumberOfSeatIncludingDriver">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>số chỗ ngồi tính cả người lái tối đa</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximum_designed_speed -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximum_designed_speed">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vận tốc thiết kế lớn nhất</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximum_power_capacity -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#maximum_power_capacity">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">công suất lớn nhất</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#minimumNumberOfPeopleCarried -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#minimumNumberOfPeopleCarried">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:label>chở người với số lượng tối thiểu</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#một_chiều -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#một_chiều">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#road"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>một chiều</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfRoad -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfRoad">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#number_of_wheel -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#number_of_wheel">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">số bánh xe</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#road -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#road">
+        <rdfs:label>đường</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#run_by_engine -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#run_by_engine">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có từ hai trục</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chạy bằng động cơ</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#sign -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#sign">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#attributes"/>
+        <rdfs:domain rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Sign"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>đường qua khu đông dân cư</rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biển báo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#specification -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#specification">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#attributes"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đặc trưng</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#attributes"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight -->
+
+    <owl:DatatypeProperty rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight">
+        <rdfs:subPropertyOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/Article -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Article">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Điều Luật</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Clause -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Clause">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khoản Luật</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Concept -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Concept">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khái Niệm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Document -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Document">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bộ Luật</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Point -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Point">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Điểm Luật</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Certificate -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Certificate">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements"/>
+        <rdfs:label>Giấy Chứng Nhận</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#LawElements">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thành Phần Luật</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Misc -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Misc">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khác</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vật Thể</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#People -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#People">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Người</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Place -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Place">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label>Địa điểm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenForwardAndBackward -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenForwardAndBackward">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Misc"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tách Biệt Giữa Chiều Đi Và Chiều Về</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenRoad -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenRoad">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Misc"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tách Biệt Giữa Các Tuyến Đường</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Sign -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Sign">
+        <rdfs:subClassOf rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biển Báo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Concept"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phương Tiện Giao Thông</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Unit -->
+
+    <owl:Class rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Unit">
+        <rdfs:label>Đơn Vị</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R43MCPZBXMxmS3TJpx1OSR -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R43MCPZBXMxmS3TJpx1OSR">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-4-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R69sfa0JrlxlAicVYDsfsO -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R69sfa0JrlxlAicVYDsfsO">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-3-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R79S2GgitiWiibhaz7qn1T6 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R79S2GgitiWiibhaz7qn1T6">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7hlc6xoXW2zyje64aWdTow -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7hlc6xoXW2zyje64aWdTow">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7liwyddBGWciFghqZFexHX -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7liwyddBGWciFghqZFexHX">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-10-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7wVXN0MtzNrZHPlvIXhax -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R7wVXN0MtzNrZHPlvIXhax">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8CNA0iqSjsI7ceKVOaX9qb -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8CNA0iqSjsI7ceKVOaX9qb">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-4-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8ONmeAz5yyM2WJlDTHWWfp -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8ONmeAz5yyM2WJlDTHWWfp">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8QtWYqGZfks5CUvNa91BNG -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8QtWYqGZfks5CUvNa91BNG">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R79S2GgitiWiibhaz7qn1T6"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R8a9NwQWfVIH2BW2JunqWja"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R8vs8eVd549cxizIhiGTAmu"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R9nKGHBHJQHx0KXkS0Pb0rd"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RCUVxqKNBkNhC3MoQP0ZtvL"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RCZ7nAnbw6tXKC7BPAsIJdj"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDKGtp8BdLh04kefspNbb69"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDLxXM0V9gIiDzTH8RFMglR"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDRWiAvDhLfWg8oC4FQOOoV"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDuaoNWEMoYJIBMCMewrrJW"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8a9NwQWfVIH2BW2JunqWja -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8a9NwQWfVIH2BW2JunqWja">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8cKp8wk2cOEpNirPHT9Rnd -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8cKp8wk2cOEpNirPHT9Rnd">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-4-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8cqwHwP5QHfrZdFbXp0kjz -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8cqwHwP5QHfrZdFbXp0kjz">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019"/>
+        <webprotege:has_point rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019"/>
+        <webprotege:has_point rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019"/>
+        <webprotege:has_point rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019"/>
+        <webprotege:has_point rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019"/>
+        <webprotege:has_point rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-3-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8nPcVgFEpBZgBlA05ICgzq -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8nPcVgFEpBZgBlA05ICgzq">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8u5Xa4wJXxsnCBqTXVSqag -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8u5Xa4wJXxsnCBqTXVSqag">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Document"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23/2008</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8vs8eVd549cxizIhiGTAmu -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R8vs8eVd549cxizIhiGTAmu">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R92cjQlHJOoH3ZinVvmR1VM -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R92cjQlHJOoH3ZinVvmR1VM">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đầu_máy"/>
+        <webprotege:is_a rdf:resource="http://webprotege.stanford.edu/RBFdfKCww4biMP3AJf47jDV"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">máy kéo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9H2Fd3Ooct9EjjDGgK0Ko4 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9H2Fd3Ooct9EjjDGgK0Ko4">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-10-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9HFxDag0hbiMEo84qBP8tH -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9HFxDag0hbiMEo84qBP8tH">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-10-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9HpSSR0fT7bEa2I1DlGcLJ -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9HpSSR0fT7bEa2I1DlGcLJ">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9K3d5hqpxmG6JO5egLBN32 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9K3d5hqpxmG6JO5egLBN32">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R8cqwHwP5QHfrZdFbXp0kjz"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/Rf1CXH8NERRzzMx0V6ZTYY"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9RSxpCt1ae5S1R08qBDGaH -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9RSxpCt1ae5S1R08qBDGaH">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9SfYCGAKdInNDR5Gr06Fva -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9SfYCGAKdInNDR5Gr06Fva">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9ZtIV6se8F2eNUbSgMyaBb -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9ZtIV6se8F2eNUbSgMyaBb">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RBuOHOMWYwpKieMo3WcIl2Y"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDSxuNmcTaBiGPgNMZoxC1L"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDg1ruXCaLQS9SM0fIuu2bf"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDrLmsfHSCyU2xHMQu3zgOt"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9cGWXTltafvf7VxBxRLtS0 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9cGWXTltafvf7VxBxRLtS0">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9itEdtwjEySo4kzGRPRpIB -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9itEdtwjEySo4kzGRPRpIB">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9lIscYE1NK6ARDC0HAqul9 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9lIscYE1NK6ARDC0HAqul9">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9maDKoJSpUTPUr9RDvpjFM -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9maDKoJSpUTPUr9RDvpjFM">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-4-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9nKGHBHJQHx0KXkS0Pb0rd -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9nKGHBHJQHx0KXkS0Pb0rd">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9sHP1B0bHKlp7IV7QIgVrT -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/R9sHP1B0bHKlp7IV7QIgVrT">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phương tiện giao thông</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB5LOlADyimD8shaCd6PHwj -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RB5LOlADyimD8shaCd6PHwj">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB82dOS7n1s8Ylye2b6HR9d -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RB82dOS7n1s8Ylye2b6HR9d">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBFdfKCww4biMP3AJf47jDV -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBFdfKCww4biMP3AJf47jDV">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBN7eomnlNToO4B5RAztrYc -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBN7eomnlNToO4B5RAztrYc">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBNLFrdQGe4EQ6wnJVrKXLM -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBNLFrdQGe4EQ6wnJVrKXLM">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RBgKBD4maPiGuYJjeRzdZjn"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RCks1t2xLt7Qlst6SYNdwkA"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDVBhyOwPkK2eJnoLDasWV3"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RDn6f8TWQsSGaaOuVvs3DyH"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RUTxfrECu4Iu5a3AbqsKtG"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBSUEVtmE6K0XqHVannxZIL -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBSUEVtmE6K0XqHVannxZIL">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBZAA8NRd0dAB1yqLF4eJb7 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBZAA8NRd0dAB1yqLF4eJb7">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-9-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBfL5pxEBLW0WVenmov0E9B -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBfL5pxEBLW0WVenmov0E9B">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBgKBD4maPiGuYJjeRzdZjn -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBgKBD4maPiGuYJjeRzdZjn">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-8-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBoeL8EGnQ4U8GoOPVmJQNr -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBoeL8EGnQ4U8GoOPVmJQNr">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBuJLBOAyfo70hS9PEhe8cL -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBuJLBOAyfo70hS9PEhe8cL">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R43MCPZBXMxmS3TJpx1OSR"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R8CNA0iqSjsI7ceKVOaX9qb"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R8cKp8wk2cOEpNirPHT9Rnd"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R9maDKoJSpUTPUr9RDvpjFM"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBuOHOMWYwpKieMo3WcIl2Y -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBuOHOMWYwpKieMo3WcIl2Y">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-2-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBvWMqSNoslcVfqLkLhafa7 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBvWMqSNoslcVfqLkLhafa7">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/R9RSxpCt1ae5S1R08qBDGaH"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/R9itEdtwjEySo4kzGRPRpIB"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RBN7eomnlNToO4B5RAztrYc"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RCMlegxVIt9ZlATVQCscwSc"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RCi4rB8gYcfctOcdtxmJdFs"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RDqbbFHC5CS1h58snbVdFCz"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RTF0QdEnGmV87vRUAdi6Y4"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RUbEPqmUkmBCnuYKIm3p3t"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RZTZiup9ddkYqcJKTr1CrF"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RmAZZ5wxIZpeD525pMVpoj"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/Rr1PHADftwWRaFBlTBJxmo"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBzbngPor1Ld8Oj67JvEg0c -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RBzbngPor1Ld8Oj67JvEg0c">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-9-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC6tYN6Cttjsa9rJFprLNsm -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RC6tYN6Cttjsa9rJFprLNsm">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC7ZCSZ32esBvtBZdl6o0DW -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RC7ZCSZ32esBvtBZdl6o0DW">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R7hlc6xoXW2zyje64aWdTow"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R7wVXN0MtzNrZHPlvIXhax"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R8nPcVgFEpBZgBlA05ICgzq"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R9HpSSR0fT7bEa2I1DlGcLJ"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R9SfYCGAKdInNDR5Gr06Fva"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R9lIscYE1NK6ARDC0HAqul9"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RB5LOlADyimD8shaCd6PHwj"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RBoeL8EGnQ4U8GoOPVmJQNr"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RQAkWhjqi3WrmtdxK6vvtf"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RSfxEFlX3NsFcPiTwsibue"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCMlegxVIt9ZlATVQCscwSc -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCMlegxVIt9ZlATVQCscwSc">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCUVxqKNBkNhC3MoQP0ZtvL -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCUVxqKNBkNhC3MoQP0ZtvL">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCZ7nAnbw6tXKC7BPAsIJdj -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCZ7nAnbw6tXKC7BPAsIJdj">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCeevdaGsRsoYHBPF3rmJlk -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCeevdaGsRsoYHBPF3rmJlk">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">c-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCi4rB8gYcfctOcdtxmJdFs -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCi4rB8gYcfctOcdtxmJdFs">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCks1t2xLt7Qlst6SYNdwkA -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RCks1t2xLt7Qlst6SYNdwkA">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-8-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RClrJ1uYeiNIhHvvzsfiyDn -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RClrJ1uYeiNIhHvvzsfiyDn">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RD0cnZYmIjpXTCe5stKYDcf -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RD0cnZYmIjpXTCe5stKYDcf">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RBZAA8NRd0dAB1yqLF4eJb7"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RBzbngPor1Ld8Oj67JvEg0c"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDIPCTMzlwBOzMlLBC0K5Fv -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDIPCTMzlwBOzMlLBC0K5Fv">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đ-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDKGtp8BdLh04kefspNbb69 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDKGtp8BdLh04kefspNbb69">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDLxXM0V9gIiDzTH8RFMglR -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDLxXM0V9gIiDzTH8RFMglR">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDRWiAvDhLfWg8oC4FQOOoV -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDRWiAvDhLfWg8oC4FQOOoV">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDSxuNmcTaBiGPgNMZoxC1L -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDSxuNmcTaBiGPgNMZoxC1L">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-2-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDVBhyOwPkK2eJnoLDasWV3 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDVBhyOwPkK2eJnoLDasWV3">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-8-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDg1ruXCaLQS9SM0fIuu2bf -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDg1ruXCaLQS9SM0fIuu2bf">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-2-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDkVXjsgiVTO4TOS6JBwdex -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDkVXjsgiVTO4TOS6JBwdex">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">i-2-1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDn6f8TWQsSGaaOuVvs3DyH -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDn6f8TWQsSGaaOuVvs3DyH">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-8-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDqbbFHC5CS1h58snbVdFCz -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDqbbFHC5CS1h58snbVdFCz">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDrLmsfHSCyU2xHMQu3zgOt -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDrLmsfHSCyU2xHMQu3zgOt">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-2-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDuaoNWEMoYJIBMCMewrrJW -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDuaoNWEMoYJIBMCMewrrJW">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-6-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDzV6hDACbQJIdyntOteMj7 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RDzV6hDACbQJIdyntOteMj7">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RB82dOS7n1s8Ylye2b6HR9d"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/RC6tYN6Cttjsa9rJFprLNsm"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RQAkWhjqi3WrmtdxK6vvtf -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RQAkWhjqi3WrmtdxK6vvtf">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RSfxEFlX3NsFcPiTwsibue -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RSfxEFlX3NsFcPiTwsibue">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-7-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RTF0QdEnGmV87vRUAdi6Y4 -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RTF0QdEnGmV87vRUAdi6Y4">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RUTxfrECu4Iu5a3AbqsKtG -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RUTxfrECu4Iu5a3AbqsKtG">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-8-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RUbEPqmUkmBCnuYKIm3p3t -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RUbEPqmUkmBCnuYKIm3p3t">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RVFiEDoWYRP08ndcnxCVmK -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RVFiEDoWYRP08ndcnxCVmK">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R7liwyddBGWciFghqZFexHX"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R9H2Fd3Ooct9EjjDGgK0Ko4"/>
+        <webprotege:has_clause rdf:resource="http://webprotege.stanford.edu/R9HFxDag0hbiMEo84qBP8tH"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RWALHFiiLPIdy71FXUl4Py -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RWALHFiiLPIdy71FXUl4Py">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#People"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">người tham gia giao thông</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RZTZiup9ddkYqcJKTr1CrF -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RZTZiup9ddkYqcJKTr1CrF">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rf1CXH8NERRzzMx0V6ZTYY -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rf1CXH8NERRzzMx0V6ZTYY">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-3-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rgv8f427s8gY6MDo6fpgCh -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rgv8f427s8gY6MDo6fpgCh">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_cơ_giới"/>
+        <webprotege:a_part_of rdf:resource="http://webprotege.stanford.edu/R9sHP1B0bHKlp7IV7QIgVrT"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="http://webprotege.stanford.edu/RBFdfKCww4biMP3AJf47jDV"/>
+        <meaning rdf:resource="http://webprotege.stanford.edu/R92cjQlHJOoH3ZinVvmR1VM"/>
+        <meaning rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự"/>
+        <meaning rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_ô_tô"/>
+        <meaning rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#rơ_moóc"/>
+        <meaning rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#sơ-mi_rơ_moóc"/>
+        <meaning rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_gắn_máy"/>
+        <meaning rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe cơ giới</rdfs:label>
+        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu_điện_bánh_lốp"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://webprotege.stanford.edu/Rgv8f427s8gY6MDo6fpgCh"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#meaning"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự"/>
+        <designedFor>để chở người và hàng hoá trên đường bộ</designedFor>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://webprotege.stanford.edu/Rgv8f427s8gY6MDo6fpgCh"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#meaning"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy"/>
+        <numberOfWheel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</numberOfWheel>
+        <numberOfWheel rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</numberOfWheel>
+    </owl:Axiom>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RmAZZ5wxIZpeD525pMVpoj -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RmAZZ5wxIZpeD525pMVpoj">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rr1PHADftwWRaFBlTBJxmo -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/Rr1PHADftwWRaFBlTBJxmo">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-5-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RyTfa4co4zoY5YynlBPn7x -->
+
+    <owl:NamedIndividual rdf:about="http://webprotege.stanford.edu/RyTfa4co4zoY5YynlBPn7x">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Document"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/R9K3d5hqpxmG6JO5egLBN32"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/R9ZtIV6se8F2eNUbSgMyaBb"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RBNLFrdQGe4EQ6wnJVrKXLM"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RBuJLBOAyfo70hS9PEhe8cL"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RBvWMqSNoslcVfqLkLhafa7"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RC7ZCSZ32esBvtBZdl6o0DW"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RD0cnZYmIjpXTCe5stKYDcf"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RDzV6hDACbQJIdyntOteMj7"/>
+        <webprotege:has_article rdf:resource="http://webprotege.stanford.edu/RVFiEDoWYRP08ndcnxCVmK"/>
+        <rdfs:label xml:lang="en">100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Certificate"/>
+        <rdfs:label>Giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông cơ giới đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Sign"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biển báo hiệu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu_đường_ưu_tên -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu_đường_ưu_tên">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Sign"/>
+        <sign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường ưu tiên</sign>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biển báo hiệu đường ưu tiên</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_đường_qua_khu_đông_dân_cư -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_đường_qua_khu_đông_dân_cư">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Sign"/>
+        <sign rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</sign>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biển báo đường qua khu đông dân cư</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#bến_phà_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#bến_phà_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bến phà đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_dọc_của_đường -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_dọc_của_đường">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiều dọc của đường</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_về -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_về">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiều về</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_đi -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_đi">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chiều đi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#càng -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#càng">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vô_lăng"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">càng</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label>các loại xe tương tự</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_gắn_máy -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_gắn_máy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_đường_bộ"/>
+        <maximum_designed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;=50km/h</maximum_designed_speed>
+        <number_of_wheel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-3</number_of_wheel>
+        <run_by_engine rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</run_by_engine>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">các loại xe tương tự xe gắn máy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_mô_tô -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_mô_tô">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_đường_bộ"/>
+        <engine_displacement rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50cm3 +</engine_displacement>
+        <maximum_designed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&gt;50km/h</maximum_designed_speed>
+        <number_of_wheel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-3</number_of_wheel>
+        <run_by_engine rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</run_by_engine>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">các loại xe tương tự xe mô tô</rdfs:label>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;=400kg</weight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_ô_tô -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_tương_tự_xe_ô_tô">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_ô_tô"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_đường_bộ"/>
+        <number_of_wheel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4+</number_of_wheel>
+        <run_by_engine rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</run_by_engine>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có phần động cơ và thùng hàng (nếu có) lắp trên cùng một xát xi (kể cả loại xe 4 bánh chạy bằng năng lượng điện)</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">các loại xe tương tự xe ô tô</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_ô_tô -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#các_loại_xe_ô_tô">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">các loại xe ô tô</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cầu_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cầu_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cầu đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_ba -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_ba">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cụm trục ba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_kép -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_kép">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cụm trục kép</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT"/>
+        <specification>xe không chạy trên đó được và để phân chia phần đường xe chạy thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường dành cho xe cơ giới và xe thô sơ hoặc của nhiều loại xe khác nhau trên cùng một chiều giao thông.</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dải phân cách</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hầm_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hầm_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hầm đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hệ_thống_trục -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hệ_thống_trục">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hệ thống trục</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#khối_lượng_bản_thân -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#khối_lượng_bản_thân">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label>khối lượng bản thân</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#kilogam -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#kilogam">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Unit"/>
+        <rdfs:label>kilôgam</rdfs:label>
+        <rdfs:seeAlso>kg</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <webprotege:a_part_of rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_xe_chạy"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT"/>
+        <divided rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_dọc_của_đường"/>
+        <specification>có đủ bề rộng cho xe chạy an toàn</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">làn đường</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường_ưu_tiên -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường_ưu_tiên">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường"/>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mà trên đó phương tiện tham gia giao thông được quy định là ưu tiên sẽ được các phương tiện khác nhường đường khi cùng tham gia giao thông.</specification>
+        <rdfs:label>làn đường ưu tiên</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#lối_vào -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#lối_vào">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Place"/>
+        <rdfs:label>lối vào</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#lốp_xe -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#lốp_xe">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lốp xe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#người_đi_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#người_đi_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#People"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">người đi bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nút_giao -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nút_giao">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau_cùng_mức"/>
+        <rdfs:label>nút giao</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau_cùng_mức"/>
+        <rdfs:label>nơi đường giao nhau</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau_cùng_mức -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau_cùng_mức">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nơi đường giao nhau cùng mức</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#nơi_đường_giao_nhau_cùng_mức"/>
+        <owl:annotatedProperty rdf:resource="http://webprotege.stanford.edu/has_a"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <numberOfRoad>hai hay nhiều</numberOfRoad>
+        <law:attributes>giao nhau trên cùng một mặt phẳng gồm cả mặt bằng hình thành vị trí giao nhau đó</law:attributes>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_cơ_giới -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_cơ_giới">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phương tiện cơ giới</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_cơ_giới_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_cơ_giới_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_của_đường_bộ"/>
+        <được_sử_dụng rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phương tiện giao thông cơ giới đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_thô_sơ_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_thô_sơ_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label>phương tiện giao thông thô sơ đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phương tiện giao thông đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_của_đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_của_đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_bộ"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_bộ"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phần của đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_tách_biệt_giữa_chiều_đi_và_về_trên_đường_hai_chiều -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_tách_biệt_giữa_chiều_đi_và_về_trên_đường_hai_chiều">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenForwardAndBackward"/>
+        <dùng_chung rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_xe_chạy"/>
+        <không_có rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phần tách biệt giữa chiều đi và về trên đường hai chiều</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <webprotege:a_part_of rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_bộ"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phần đường</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_cơ_giới -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_cơ_giới">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_của_đường_bộ"/>
+        <được_sử_dụng rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
+        <được_sử_dụng rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_chuyên_dùng"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phần đường dành cho xe cơ giới</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_cơ_giới"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_sử_dụng"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_chuyên_dùng"/>
+        <law:attributes>qua lại</law:attributes>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_thô_sơ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_thô_sơ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_của_đường_bộ"/>
+        <được_sử_dụng rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_thô_sơ_đường_bộ"/>
+        <rdfs:label>phần đường dành cho xe thô sơ</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_dành_cho_xe_thô_sơ"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_sử_dụng"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_giao_thông_thô_sơ_đường_bộ"/>
+        <law:attributes>qua lại</law:attributes>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_xe_chạy -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_xe_chạy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_của_đường_bộ"/>
+        <được_sử_dụng rdf:resource="http://webprotege.stanford.edu/R9sHP1B0bHKlp7IV7QIgVrT"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phần đường xe chạy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_xe_chạy"/>
+        <owl:annotatedProperty rdf:resource="http://webprotege.stanford.edu/has_a"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường"/>
+        <transportation>một hoặc nhiều</transportation>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường_xe_chạy"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#được_sử_dụng"/>
+        <owl:annotatedTarget rdf:resource="http://webprotege.stanford.edu/R9sHP1B0bHKlp7IV7QIgVrT"/>
+        <law:attributes>qua lại</law:attributes>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#rơ_moóc -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#rơ_moóc">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT"/>
+        <towed rdf:resource="http://webprotege.stanford.edu/R92cjQlHJOoH3ZinVvmR1VM"/>
+        <được_kết_nối rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có thể tháo rời với phần đầu kéo</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rơ-móoc</rdfs:label>
+        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hệ_thống_trục"/>
+        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#lốp_xe"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#rơ_moóc"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#specification"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">có thể tháo rời với phần đầu kéo</owl:annotatedTarget>
+        <owl:versionInfo rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019"/>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#sơ-mi_rơ_moóc -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#sơ-mi_rơ_moóc">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label>sơ-mi rơ moóc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thông_số -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thông_số">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label>thông số</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thùng_xe_của_ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thùng_xe_của_ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label>thùng xe của ô tô đầu kéo kéo sơ-mi rơ-móoc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ton -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ton">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Unit"/>
+        <rdfs:label>tấn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#khối_lượng_bản_thân"/>
+        <writtenRespectively rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thông_số"/>
+        <rdfs:label>trọng tải bản thân xe</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe"/>
+        <owl:annotatedProperty rdf:resource="http://webprotege.stanford.edu/is_a"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#khối_lượng_bản_thân"/>
+        <belongTo rdf:resource="http://webprotege.stanford.edu/RBFdfKCww4biMP3AJf47jDV"/>
+        <state>tĩnh</state>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#writtenRespectively"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#thông_số"/>
+        <notCounting>khối lượng hàng hoá trên xe</notCounting>
+        <notCounting>khối lượng người trong xe</notCounting>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tổng_trọng_tải"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT"/>
+        <equal rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe"/>
+        <rdfs:label>trọng tải toàn bộ xe</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#equal"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe"/>
+        <cộng rdf:datatype="http://www.w3.org/2001/XMLSchema#string">khối lượng của người, hành lý, hàng hoá xếp trên xe (nếu có)</cộng>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe_cho_phép -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe_cho_phép">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT"/>
+        <equal rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe"/>
+        <identifiedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trọng tải toàn bộ xe cho phép</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe_cho_phép"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#equal"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_bản_thân_xe"/>
+        <cộng>khối lượng chuyên chở cho phép</cộng>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_xe -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_xe">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_ba"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cụm_trục_kép"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_đơn"/>
+        <mentionedIn rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trục xe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_đơn -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_đơn">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trục đơn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tuyến_đường -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tuyến_đường">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tuyến đường</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label>tàu</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu_điện_bánh_lốp -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu_điện_bánh_lốp">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tàu"/>
+        <chạy_bằng_điện rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</chạy_bằng_điện>
+        <chạy_trên_đường_ray rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</chạy_trên_đường_ray>
+        <rdfs:label>tàu điện bánh lốp</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_chiều_đi_và_về_trên_đường_đôi -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_chiều_đi_và_về_trên_đường_đôi">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenForwardAndBackward"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_về"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_đi"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_chiều_đi_và_về_trên_đường_đôi"/>
+        <distinguished rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tách biệt giữa chiều đi và về trên đường đôi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_đường_dành_cho_một_số_loại_phương_tiện_với_đường_dành_cho_các_phương_tiện_khác -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_đường_dành_cho_một_số_loại_phương_tiện_với_đường_dành_cho_các_phương_tiện_khác">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenRoad"/>
+        <separated_with rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_cho_các_phương_tiện_khác"/>
+        <separated_with rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_một_số_loại_phương_tiện"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tách biệt giữa đường dành cho một số loại phương tiện với đường dành cho các phương tiện khác</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới_với_đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tách_biệt_giữa_đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới_với_đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#SeparationBetweenRoad"/>
+        <separated_with rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới"/>
+        <separated_with rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ"/>
+        <rdfs:label>tách biệt giữa đường dành riêng cho các loại phương tiện cơ giới với đường dành riêng cho các phương tiện thô sơ và người đi bộ</rdfs:label>
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tải_trọng_trục_xe -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tải_trọng_trục_xe">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:a_part_of rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trọng_tải_toàn_bộ_xe"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT"/>
+        <phân_bổ_trên rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_xe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tải trọng trục xe</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tải_trọng_trục_xe"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phân_bổ_trên"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#trục_xe"/>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</transportation>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tổng_trọng_tải -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tổng_trọng_tải">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label>tổng trọng tải</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vô_lăng -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vô_lăng">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vô lăng</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vạch sơn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
+        <specification>dọc liền</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vạch sơn dọc liền</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_3_bánh -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_3_bánh">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe 3 bánh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_bán_tải -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_bán_tải">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_pickup"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe bán tải</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_con -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_con">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô_con"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_3_bánh"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_bán_tải"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải_VAN"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe con</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_con"/>
+        <owl:annotatedProperty rdf:resource="http://webprotege.stanford.edu/has_a"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_3_bánh"/>
+        <weight>lớn hơn 400</weight>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_con"/>
+        <owl:annotatedProperty rdf:resource="http://webprotege.stanford.edu/has_a"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải_VAN"/>
+        <amountOfPermittedMerchandise>dưới 950kg</amountOfPermittedMerchandise>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_gắn_máy -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_gắn_máy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe gắn máy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_khách -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_khách">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_khách"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe khách</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label>xe máy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_chuyên_dùng -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_chuyên_dùng">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe máy chuyên dùng</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_điện -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_điện">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_gắn_máy"/>
+        <has_electric_motor_driven_system rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_electric_motor_driven_system>
+        <maximum_designed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;=50km/h</maximum_designed_speed>
+        <maximum_power_capacity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;=4kW</maximum_power_capacity>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe máy điện</rdfs:label>
+        <exclude rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_pickup -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_pickup">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe pickup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_thô_sơ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_thô_sơ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe thô sơ</rdfs:label>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hai bánh có lắp động cơ, vận tốc thiết kế lớn nhất không lớn hơn 25 km/h và khi tắt máy thì đạp xe đi được (kể cả xe đạp điện)</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <owl:sameAs rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_tải"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe tải</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải_VAN -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải_VAN">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe tải VAN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label>xe ô tô</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô_con -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô_con">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
+        <identifiedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
+        <isPersonalTransportation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isPersonalTransportation>
+        <maximumNumberOfSeatIncludingDriver rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</maximumNumberOfSeatIncludingDriver>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe ô tô con</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_đạp_máy -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_đạp_máy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_thô_sơ"/>
+        <has_engine rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</has_engine>
+        <maximum_designed_speed rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;=25km/h</maximum_designed_speed>
+        <number_of_wheel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</number_of_wheel>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">khi tắt máy thì đạp xe đi được</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">xe đạp máy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_khách -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_khách">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
+        <identifiedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
+        <isPersonalTransportation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isPersonalTransportation>
+        <minimumNumberOfPeopleCarried rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</minimumNumberOfPeopleCarried>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ô tô khách</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_kéo_rơ-móoc -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_kéo_rơ-móoc">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ô tô kéo rơ-móoc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_tải -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_tải">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
+        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải_VAN"/>
+        <specification>có kết cấu và trang bị chủ yếu để chuyên chở hàng hoá</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ô tô tải</rdfs:label>
+        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_kéo_rơ-móoc"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_tải"/>
+        <owl:annotatedProperty rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include"/>
+        <owl:annotatedTarget rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_tải_VAN"/>
+        <amountOfPermittedMerchandise>từ 950kg</amountOfPermittedMerchandise>
+    </owl:Axiom>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_đầu_kéo -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_đầu_kéo">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ô tô đầu kéo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ô_tô_đầu_kéo_kéo_sơ-mi_rơ-móoc">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="http://webprotege.stanford.edu/Rgv8f427s8gY6MDo6fpgCh"/>
+        <isFreighTransport rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isFreighTransport>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ô tô đầu kéo kéo sơ-mi rơ-móoc</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#bến_phà_đường_bộ"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#cầu_đường_bộ"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#hầm_đường_bộ"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_cho_các_phương_tiện_khác -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_cho_các_phương_tiện_khác">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường cho các phương tiện khác</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_loại_phương_tiện_cơ_giới">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tuyến_đường"/>
+        <dedicated rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phương_tiện_cơ_giới"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường dành riêng cho các loại phương tiện cơ giới</rdfs:label>
+        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu"/>
+        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_các_phương_tiện_thô_sơ_và_người_đi_bộ">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tuyến_đường"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường dành riêng cho các phương tiện thô sơ và người đi bộ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_một_số_loại_phương_tiện -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_dành_riêng_cho_một_số_loại_phương_tiện">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#làn_đường"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_đường"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#tuyến_đường"/>
+        <specification>dành riêng cho một hoặc một vài loại phương tiện được lưu 
+thông</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường dành riêng cho một số loại phương tiện</rdfs:label>
+        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu"/>
+        <instructedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_hai_chiều -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_hai_chiều">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#phần_tách_biệt_giữa_chiều_đi_và_về_trên_đường_hai_chiều"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <dùng_chung rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_về"/>
+        <dùng_chung rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_đi"/>
+        <rdfs:label>đường hai chiều</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_không_ưu_tiên -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_không_ưu_tiên">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <intersect rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_ưu_tiên"/>
+        <rdfs:label>đường không ưu tiên</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_một_chiều -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_một_chiều">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <một_chiều rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</một_chiều>
+        <rdfs:label>đường một chiều</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_qua_khu_đông_dân_cư -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_qua_khu_đông_dân_cư">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_đường_qua_khu_đông_dân_cư"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_bộ"/>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nằm trong khu vực nội thành phố, nội thị xã, nội thị trấn và những đoạn đường có dân cư sinh sống sát dọc theo đường, có các hoạt động có thể ảnh hưởng đến an toàn giao thông đường bộ</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_đô_thị -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_đô_thị">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nằm trong phạm vi địa giới hành chính nội thành, nội thị xã và thị trấn</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường đô thị</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_đôi -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_đôi">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <rdfs:label>đường đôi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_ưu_tiên -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường_ưu_tiên">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:defined_in rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT"/>
+        <webprotege:is_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đường"/>
+        <placed rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#biển_báo_hiệu_đường_ưu_tên"/>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mà trên đó phương tiện tham gia giao thông được 
+các phương tiện giao thông đến từ hướng khác nhường đường khi qua nơi đường giao nhau</specification>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường ưu tiên</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đầu_máy -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đầu_máy">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <driven rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#càng"/>
+        <driven rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vô_lăng"/>
+        <rdfs:label>đầu máy</rdfs:label>
+        <transportation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tự di chuyển</transportation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#10-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#10-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#23-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#23-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-53/2008 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-53/2008">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-53/2008"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-QCVN_41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-QCVN_41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Article"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#1-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#10-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#11-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#12-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#13-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#14-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#15-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#16-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#17-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#18-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#19-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#2-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#20-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#21-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#22-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#23-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#24-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#25-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#26-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#27-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#28-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#29-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#58-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT"/>
+        <webprotege:has_clause rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-41:2019/BGTVT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#30-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#4-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Document"/>
+        <webprotege:has_article rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-QCVN_41:2019/BGTVT"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">41:2019/BGTVT</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#5-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#53/2008 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#53/2008">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Document"/>
+        <webprotege:has_article rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#3-53/2008"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53/2008</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#58-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#58-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#6-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#7-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#8-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#9-3-41:2019/BGTVT">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Clause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#a-1-3-100/2019">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#b-1-3-100/2019">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#c-1-3-100/2019">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#d-1-3-100/2019">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#e-1-3-100/2019">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-1-3-100/2019</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019 -->
+
+    <owl:NamedIndividual rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#đ-1-3-100/2019">
+        <rdf:type rdf:resource="http://webprotege.stanford.edu/Point"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Transportation"/>
+        <rdfs:label>xe tải VAN</rdfs:label>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">950</weight>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid20">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_về"/>
+        <webprotege:has_a rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_đi"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Misc"/>
+        <rdfs:label>a</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid22">
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+        <dùng_chung rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_về"/>
+        <dùng_chung rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#chiều_đi"/>
+        <rdfs:label>a</rdfs:label>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Object"/>
+    </rdf:Description>
+    <rdf:Description>
+        <include rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_máy_điện"/>
+    </rdf:Description>
+    <rdf:Description>
+        <exclude rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn"/>
+    </rdf:Description>
+    <rdf:Description>
+        <pulledBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid27">
+        <measureBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#kilogam"/>
+        <measureBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#ton"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid28">
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid29">
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#dải_phân_cách"/>
+        <separatedBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#vạch_sơn_dọc_liền"/>
+    </rdf:Description>
+    <rdf:Description>
+        <pulledBy rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#xe_ô_tô"/>
+    </rdf:Description>
+    <rdf:Description>
+        <prescribedAt rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#Giấy_chứng_nhận_kiểm_định_an_toàn_kỹ_thuật_và_bảo_vệ_môi_trường_phương_tiện_giao_thông_cơ_giới_đường_bộ"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>đường qua khu đông dân cư</rdfs:label>
+    </rdf:Description>
+    <rdf:Description>
+        <specification>xe</specification>
+        <rdfs:label>add</rdfs:label>
+    </rdf:Description>
+    <rdf:Description>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</specification>
+    </rdf:Description>
+    <rdf:Description>
+        <specification rdf:datatype="http://www.w3.org/2001/XMLSchema#string">đường qua khu đông dân cư</specification>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://webprotege.stanford.edu/R7O8ZiTr3i8T6G6nvezrPHN">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Object</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#active">
+        <rdfs:label>chủ động</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#amountOfPermittedMerchandise">
+        <rdfs:label>khối lượng hàng hoá chuyên chở cho phép tham gia giao thông</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#designedFor">
+        <rdfs:label>được thiết kế</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#exclude">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ngoại trừ</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indicate that this law is true if exclude the other</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#include">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bao gồm</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#instructedBy">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">được chỉ dẫn</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#mathematics">
+        <rdfs:label>toán học</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">không có</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notCounting">
+        <rdfs:label>không kể đến</rdfs:label>
+        <rdfs:seeAlso rdf:resource="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#notContains"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfRoad">
+        <rdfs:label>số lượng con đường</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#numberOfWheel">
+        <rdfs:label>số bánh xe</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#passive">
+        <rdfs:label>bị động</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#prescribedAt">
+        <rdfs:label>được quy định trong</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#pulledBy">
+        <rdfs:label>được kéo bởi</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#scope">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phạm vi</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#separatedBy">
+        <rdfs:label>được tách biệt bởi</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#transportation">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phương tiện</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:webprotege:ontology:2632ee9e-aaf6-4286-a09d-328b50fa910d#weight">
+        <rdfs:label>khối lượng</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
