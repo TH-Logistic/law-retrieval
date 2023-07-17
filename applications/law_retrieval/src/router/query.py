@@ -7,6 +7,6 @@ router = APIRouter(prefix="")
 query_service = QueryService()
 
 
-@router.post("/query", response_model=list[QueryOut])
-def query_article(body: Query) -> str:
+@router.post("/query")
+def query_article(body: Query):
     return query_service.query_articles(body.query)

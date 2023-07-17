@@ -1,4 +1,5 @@
 from pydantic import BaseModel, Field
+from typing import Optional
 
 
 class Query(BaseModel):
@@ -7,6 +8,9 @@ class Query(BaseModel):
 
 class QueryOut(BaseModel):
     type: str
-    code: str | None = None
-    title: str | None = None
-    content: str | None = None
+    code: Optional[str] = None
+    title: Optional[str] = None
+    content: Optional[str] = None
+
+    class Config:
+        arbitrary_types_allowed = True

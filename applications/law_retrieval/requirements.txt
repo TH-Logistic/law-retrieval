@@ -1,6 +1,7 @@
-fastapi[all]
+fastapi==0.90.0
+uvicorn[standard]
 python-multipart
-pydantic-settings
+# pydantic-settings
 autopep8
 python-dotenv
 python-jose
@@ -13,4 +14,4 @@ sqlalchemy
 neo4j
 
 pyvi
-spacy
+spacy==3.0.5
