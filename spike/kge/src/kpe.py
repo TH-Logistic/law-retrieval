@@ -1,10 +1,10 @@
 # Keyphrase extraction
 from .stopwords import get_stop_words
 import yake
-import spacy
-import pytextrank
 import py_vncorenlp
 import os
+from .textrank.textrank import TextRank
+# from wordwise import Extractor
 
 
 class KeyPhraseExtraction:
@@ -25,16 +25,17 @@ class KeyPhraseExtraction:
         return keywords
 
     @staticmethod
-    def textrank(nlp: spacy.language.Language, text: str):
-        if not nlp.has_pipe("textrank"):
-            nlp.add_pipe("textrank")
-        text = text.lower()
-        doc = nlp(text)
-        for phrase in doc._.phrases:
-            print(phrase.text)
-            print(phrase.rank, phrase.count)
-            print(phrase.chunks)
-        return text
+    def textrank(text: str):
+        t = TextRank(text)
+        # Reference: https://github.com/lukhnos/textrank-study-python/blob/master/Key%20Phrase%20Extraction%20with%20Python.ipynb
+        print(t.keywords(10))
+
+    @staticmethod
+    def textrank_v2(text: str):
+        # extractor = Extractor(spacy_model="vi_core_news_lg")
+        # keywords = extractor.generate(text)
+        # print(keywords)
+        pass
 
     @staticmethod
     def phobert(text: str):

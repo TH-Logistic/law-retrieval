@@ -16,3 +16,4 @@ networkx
 nltk
 sklearn
 matplotlib
+wordwise

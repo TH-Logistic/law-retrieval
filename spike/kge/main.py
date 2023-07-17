@@ -81,10 +81,6 @@ graphRepository = GraphRepository("bolt://localhost:7687")
 question = "Hành vi gây tai nạn giao thông không dừng lại, không giữ nguyên hiện trường, bỏ trốn không đến trình báo với cơ quan có thẩm quyền, không tham gia cấp cứu người bị nạn bị xử phạt vi phạm hành chính như thế nào?"
 # print(KeyPhraseExtraction.yake(question))
 
-KeyPhraseExtraction.textrank(nlp, question)
+KeyPhraseExtraction.textrank(question)
 
 # KeyPhraseExtraction.phobert(question)
-
-t = TextRank(question)
-# Reference: https://github.com/lukhnos/textrank-study-python/blob/master/Key%20Phrase%20Extraction%20with%20Python.ipynb
-print(t.keywords(10))
