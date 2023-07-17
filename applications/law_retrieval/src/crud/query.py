@@ -11,23 +11,25 @@ settings = Settings()
 graphRepository = GraphRepository(uri=settings.get_graph_database_url())
 
 
-def map_record_to_response(record: Record, key: str) -> QueryOut:
-    node = record.get(key)
+def map_record_to_response(record: Record, node_key: str, code_key: str) -> QueryOut:
+    node = record.get(node_key)
     node_label = node.labels
     return QueryOut(
-        title=node.get('title'),
-        content=node.get('content'),
+        title=node.get("title"),
+        content=node.get("content"),
         type=list(node_label)[0],
-        code=node.get('index')
+        code=record.get(code_key),
     )
 
 
-nlp = spacy.load('vi_core_news_lg')
+nlp = spacy.load("vi_core_news_lg")
+nlp.add_pipe("textrank")
 
 
 class QueryService:
     def query_articles(self, query: str) -> list[QueryOut]:
         law_retrieval = LawRetrieval(query)
+        doc = nlp(query)
         words = law_retrieval.keyphrases()
 
         keyphrases = []
@@ -35,44 +37,59 @@ class QueryService:
             tag_result = []
             doc = nlp(word)
             for token in doc:
-                tag_result.append(token.text+'|'+token.tag_)
+                tag_result.append(token.text + "|" + token.tag_)
 
-                if (token.tag_ == 'N' or token.tag_ == 'V'):
+                if token.tag_ == "N" or token.tag_ == "V":
                     keyphrases.append(token.text)
-        nodes = []
+        result = []
 
         for keyphrase in keyphrases:
-            res = graphRepository.query(
-                f'''
+            query_result = graphRepository.query(
+                f"""
                 MATCH (n)
-                WHERE (n:Article OR n:Clause OR n:POINT)
-                AND n.content CONTAINS $query
-                RETURN n
-                LIMIT 10
-                ''',
-                parameters={"query": keyphrase}
+                WHERE (n:Point)
+                AND toLower(n.content) CONTAINS $query
+                WITH n
+                MATCH (d: Document)-[:HAS_ARTICLE]-(a:Article)-[:HAS_CLAUSE]-(c:Clause)-[:HAS_POINT]-(n)
+                RETURN n, n.index + "_" + c.index + "_" + a.index + "_" + d.code as code
+                LIMIT 5
+                """,
+                parameters={"query": keyphrase},
             )
 
             query_out = list(
-                map(lambda r: map_record_to_response(r, 'n'), res)
+                map(
+                    lambda r: map_record_to_response(
+                        record=r, node_key="n", code_key="code"
+                    ),
+                    query_result,
+                )
             )
 
-            nodes.append(query_out)
+            result.append(query_out)
 
-        nodes = functools.reduce(lambda a, b: [*a, *b], nodes)
+        result = functools.reduce(lambda a, b: [*a, *b], result)
 
         question = nlp(query)
 
-        nodes = list(map(lambda n: {
-            "similarity": question.similarity(nlp(n.content.lower())),
-            "node": nodes
-        }, nodes))
-        nodes.sort(key=lambda a: a['similarity'], reverse=True)
-        # key=lambda a, b: a['similarity'] < b['similarity'])
+        result = sorted(
+            list(
+                map(
+                    lambda n: {
+                        "similarity": question.similarity(nlp(n.content.lower())),
+                        "node": result,
+                    },
+                    result,
+                )
+            ),
+            key=lambda a: a["similarity"],
+            reverse=True,
+        )
 
-        nodes = list(map(lambda n: n['node'], nodes))
-        print(nodes)
-        return nodes
+        # nodes = list(map(lambda n: n["node"], nodes))
+        return result
+
+        return []
 
         # for i in range(len(nodes)):
         #     similarity = question.similarity(nlp(nodes[i].content.lower()))
@@ -85,58 +102,54 @@ class QueryService:
                 "type": "Article",
                 "code": "2/NĐ100-2019",
                 "title": "Phạm vi điều chỉnh",
-                "content": 'Buộc phải thu dọn thóc, lúa, rơm, rạ, nông, lâm, hải sản, rác, chất phế thải, phương tiện, vật tư, vật liệu, hàng hóa, máy móc, thiết bị, biển hiệu, biển quảng cáo, đinh, vật sắc nhọn, dây, các loại vật dụng, vật cản khác',
+                "content": "Buộc phải thu dọn thóc, lúa, rơm, rạ, nông, lâm, hải sản, rác, chất phế thải, phương tiện, vật tư, vật liệu, hàng hóa, máy móc, thiết bị, biển hiệu, biển quảng cáo, đinh, vật sắc nhọn, dây, các loại vật dụng, vật cản khác",
             },
-
             {
                 "type": "Clause",
                 "code": "5-3/NĐ100-2019",
                 "title": "",
-                "content": 'Các biện pháp khắc phục hậu quả khác trong lĩnh vực giao thông đường bộ:',
+                "content": "Các biện pháp khắc phục hậu quả khác trong lĩnh vực giao thông đường bộ:",
             },
             {
                 "type": "Point",
                 "code": "b-5-2/NĐ100-2019",
                 "title": "",
-                "content": 'Buộc phải cấp “thẻ nhận dạng lái xe” cho lái xe theo quy định;',
+                "content": "Buộc phải cấp “thẻ nhận dạng lái xe” cho lái xe theo quy định;",
             },
             {
                 "type": "Article",
                 "code": "2/NĐ100-2019",
                 "title": "Phạm vi điều chỉnh",
-                "content": 'Buộc phải thu dọn thóc, lúa, rơm, rạ, nông, lâm, hải sản, rác, chất phế thải, phương tiện, vật tư, vật liệu, hàng hóa, máy móc, thiết bị, biển hiệu, biển quảng cáo, đinh, vật sắc nhọn, dây, các loại vật dụng, vật cản khác',
+                "content": "Buộc phải thu dọn thóc, lúa, rơm, rạ, nông, lâm, hải sản, rác, chất phế thải, phương tiện, vật tư, vật liệu, hàng hóa, máy móc, thiết bị, biển hiệu, biển quảng cáo, đinh, vật sắc nhọn, dây, các loại vật dụng, vật cản khác",
             },
-
             {
                 "type": "Clause",
                 "code": "5-3/NĐ100-2019",
                 "title": "",
-                "content": 'Các biện pháp khắc phục hậu quả khác trong lĩnh vực giao thông đường bộ:',
+                "content": "Các biện pháp khắc phục hậu quả khác trong lĩnh vực giao thông đường bộ:",
             },
             {
                 "type": "Point",
                 "code": "b-5-2/NĐ100-2019",
                 "title": "",
-                "content": 'Buộc phải cấp “thẻ nhận dạng lái xe” cho lái xe theo quy định;',
+                "content": "Buộc phải cấp “thẻ nhận dạng lái xe” cho lái xe theo quy định;",
             },
             {
                 "type": "Article",
                 "code": "2/NĐ100-2019",
                 "title": "Phạm vi điều chỉnh",
-                "content": 'Buộc phải thu dọn thóc, lúa, rơm, rạ, nông, lâm, hải sản, rác, chất phế thải, phương tiện, vật tư, vật liệu, hàng hóa, máy móc, thiết bị, biển hiệu, biển quảng cáo, đinh, vật sắc nhọn, dây, các loại vật dụng, vật cản khác',
+                "content": "Buộc phải thu dọn thóc, lúa, rơm, rạ, nông, lâm, hải sản, rác, chất phế thải, phương tiện, vật tư, vật liệu, hàng hóa, máy móc, thiết bị, biển hiệu, biển quảng cáo, đinh, vật sắc nhọn, dây, các loại vật dụng, vật cản khác",
             },
-
             {
                 "type": "Clause",
                 "code": "5-3/NĐ100-2019",
                 "title": "",
-                "content": 'Các biện pháp khắc phục hậu quả khác trong lĩnh vực giao thông đường bộ:',
+                "content": "Các biện pháp khắc phục hậu quả khác trong lĩnh vực giao thông đường bộ:",
             },
             {
                 "type": "Point",
                 "code": "b-5-2/NĐ100-2019",
                 "title": "",
-                "content": 'Buộc phải cấp “thẻ nhận dạng lái xe” cho lái xe theo quy định;',
+                "content": "Buộc phải cấp “thẻ nhận dạng lái xe” cho lái xe theo quy định;",
             },
-
         ]
