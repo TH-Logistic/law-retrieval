@@ -23,7 +23,6 @@ def map_record_to_response(record: Record, node_key: str, code_key: str) -> Quer
 
 
 nlp = spacy.load("vi_core_news_lg")
-nlp.add_pipe("textrank")
 
 
 class QueryService:
@@ -70,6 +69,8 @@ class QueryService:
 
         result = functools.reduce(lambda a, b: [*a, *b], result)
 
+        print(len(result))
+
         question = nlp(query)
 
         result = sorted(
@@ -77,7 +78,7 @@ class QueryService:
                 map(
                     lambda n: {
                         "similarity": question.similarity(nlp(n.content.lower())),
-                        "node": result,
+                        "node": n,
                     },
                     result,
                 )
