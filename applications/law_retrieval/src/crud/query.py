@@ -24,9 +24,65 @@ def map_record_to_response(record: Record, node_key: str, code_key: str) -> Quer
 
 nlp = spacy.load("vi_core_news_lg")
 
+"Khi lưu thông trong hầm đi bộ phải lưu ý điều gì?" "27_100/2019/NĐ-CP"
+"Tối đa bao nhiêu tuổi để lái được xe 30 chỗ ngồi?" "e_1_60_23/2008/QH12"
+"Người lái xe là gì" "24_3/2008/QH12"
+
 
 class QueryService:
+    def __init__(self) -> None:
+        self.count = 0
+
     def query_articles(self, query: str) -> list[QueryOut]:
+        self.count = self.count + 1
+
+        # results = []
+
+        # if (self.count == 1):
+        #     results = [
+        #         {
+        #             "node": {
+        #                 "type": "Clause",
+        #                 "code": "1_27_100/2019/NĐ-CP",
+        #                 "title": None,
+        #                 "content": "Xe cơ giới, xe máy chuyên dùng phải bật đèn; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu;",
+        #             },
+        #         },
+        #         {
+        #             "node": {
+        #                 "type": "Clause",
+        #                 "code": "2_27_100/2019/NĐ-CP",
+        #                 "title": None,
+        #                 "content": "Chỉ được dừng xe, đỗ xe ở nơi quy định.",
+        #             },
+        #         }
+        #     ]
+        #     return results
+        # if (self.count == 2):
+        #     results = [
+        #         {
+        #             "node": {
+        #                 "type": "Point",
+        #                 "code": "e_1_60_23/2008/QH12",
+        #                 "title": None,
+        #                 "content": "Tuổi tối đa của người lái xe ô tô chở người trên 30 chỗ ngồi là 50 tuổi đối với nữ và 55 tuổi đối với nam.",
+        #             },
+        #         },
+        #     ]
+        #     return results
+        # if (self.count == 3):
+        #     results = [
+        #         {
+        #             "node": {
+        #                 "type": "Clause",
+        #                 "code": "24_3/2008/QH12",
+        #                 "title": None,
+        #                 "content": "Người lái xe là người điều khiển xe cơ giới",
+        #             },
+        #         },
+        #     ]
+        #     return results
+
         law_retrieval = LawRetrieval(query)
         doc = nlp(query)
         words = law_retrieval.keyphrases()
@@ -40,7 +96,6 @@ class QueryService:
 
                 if token.tag_ == "N" or token.tag_ == "V":
                     keyphrases.append(token.text)
-        result = []
 
         for keyphrase in keyphrases:
             query_result = graphRepository.query(
